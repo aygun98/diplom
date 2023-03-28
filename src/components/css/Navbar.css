@@ -1,0 +1,258 @@
+.navbar{
+    padding: 50px 100px;
+}
+
+
+
+.navbar-brand{
+    display: inline-block;
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/Logo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 172px;
+    height: 50px;
+}
+/* fabars */
+.fabars-icon{
+    font-size: 30px;
+    cursor: pointer;
+    /* z-index: 1; */
+}
+.navbar-fabars-icon{
+    /* background-color: #2b98e6; */
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.navbar-fabars-icon:hover .fabars-icon{
+    color: #fff;
+}
+.navbar-fabars-icon:hover{
+    background-color: #2B1A66;
+}
+
+
+
+
+
+
+.nav-item{
+    padding: 0 15px;
+}
+.nav-link{
+    color: #000000d0;
+    font-weight: 500 !important;
+    font-size: 16px;
+
+}
+.nav-link:hover{
+    color: #2B1A66;
+}
+.navbar-button{
+    width: 232px;
+    height: 57px;
+    background-color: #2b98e6;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* dropmenu */
+.dropdownmenu{
+    position: relative;
+    display: none;
+    background-color: #ffffffe0;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 5px rgba(45,45,45,.2);
+    /* transform: rotate(180deg); */
+    
+}
+/* .sehife-drop{
+    
+    transition: 1s;
+
+}
+.sehife-drop:hover{
+    transform: translateY(10px);
+} */
+
+
+.sehife:hover .sehife-drop{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  
+    /* transition: 1s; */
+   
+   
+}
+/* .sehife-drop{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+.sehife:hover .sehife-drop{
+    transform: translateY(10px);
+   
+} */
+.blog:hover .blog-drop{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.sehife:hover .iodropicon{
+  transform: rotate(180deg);
+}
+.blog:hover .iodropicon{
+  transform: rotate(180deg);
+}
+.dropdownItem{
+    text-decoration: none;
+    color: #000000c4;
+    padding: 15px 5px;
+    font-weight: 500;
+    color: #000000bb;
+}
+.dropdownItem:hover{
+    background-color: #2B1A66;
+    color: #fff;
+   
+}
+.sehife-drop, .blog-drop{
+    list-style-type: none;
+   padding: 0px 0px;
+   width: 220px;
+   height: max-content
+  
+}
+
+
+
+/* overlaymenu */
+.overlay-arxa{
+    position: fixed;
+    background-color: #35256d8c;
+    width: 0;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    /* padding-top: 50px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.aktiv-arxa{
+    width: 100%;
+}
+.overlay{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.986);
+    width: 0;
+    height: 100vh;
+    z-index: 999999999999;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+    overflow-x:hidden ;
+    transition: 1s ease 500ms;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.aktiv{
+width: 340px;
+}
+.overlay li{
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 15px;
+}
+.overlay-dropdownmenu{
+    display: none;
+}
+.overlay-nav-link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.overlay-nav-link:hover{
+    color:#532a7a;
+}
+
+
+
+.overlay-arrow-icon{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #3a3a3a;
+
+}
+.overlay-nav-link:hover .overlay-arrow-icon{
+    color:#532a7a;
+}
+.overlay-span-cross-icon{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    /* background-color: #2B1A66; */
+    padding: 9px 11px;
+    border-radius: 5px;
+    border: 1px solid #8b8989dd;
+    transition: 500ms;
+}
+.overlay-cross-icon{
+    color:#35256D;
+    font-size: 20px;
+    cursor: pointer;
+}
+.overlay-span-cross-icon:hover{
+    background-color:#35256D ;
+}
+.overlay-span-cross-icon:hover .overlay-cross-icon{
+    /* background-color:#35256D ; */
+    color: #fff;
+}
+
+/* media */
+@media (max-width:1255px){
+    .navbar{
+        padding: 50px 50px;
+    }
+}
+@media (max-width:1135px){
+    .navbar{
+        padding: 50px 0px;
+    }
+    .navbar-button{
+        width: 200px;
+        height: 57px;
+        
+    }
+}
+@media (max-width:991px) {
+    .navbar{
+        padding: 50px 50px;
+    }
+    .navbar-button{
+        width: 200px;
+        height: 57px;
+        
+    }
+    .navbar-fabars-icon{
+        display: inline-block;
+    }
+}
+@media (max-width:800px){
+    .navbar{
+        padding: 50px 20px;
+    }
+   
+}
