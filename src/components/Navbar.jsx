@@ -7,6 +7,8 @@ import { TfiArrowCircleDown } from 'react-icons/tfi'
 import { IoMdArrowForward} from 'react-icons/io'
 //Button
 import Button from './Button'
+//Link
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 const overlayElement = useRef()
@@ -37,80 +39,80 @@ const overlayUnvanarxa = useRef()
             <div className='overlay' ref={overlayElement}>
             <span className='overlay-span-cross-icon' ><RxCross2 className='overlay-cross-icon'  onClick={closeOverlay} /></span>
                 <li>
-                    <a href="" className="overlay-nav-link">Ana səhifə</a>
+                    <Link to="/" className="overlay-nav-link">Ana səhifə</Link>
                 </li>
                 <li>
 
-                    <a href="" className="overlay-nav-link">Haqqımızda</a> 
+                    <Link to="" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <a href="" className="overlay-nav-link">Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
+                    <Link to="" className="overlay-nav-link">Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
                     <ul className="overlay-dropdownmenu overlay-sehife-drop">
-                        <a className="overlay-dropdownItem" href="#">Xidmətlər</a>
-                        <a className="overlay-dropdownItem" href="#">Xidmət Təfərrüatı</a>
-                        <a className="overlay-dropdownItem" href="#">Qiymət Planı</a>
+                        <Link className="overlay-dropdownItem" to="#">Xidmətlər</Link>
+                        <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
+                        <Link className="overlay-dropdownItem" to="#">Qiymət Planı</Link>
 
                     </ul>
 
                 </li>
                 <li>
-                    <a href="" className="overlay-nav-link">Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></a>
+                    <Link to="" className="overlay-nav-link">Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
                     <ul className="overlay-dropdownmenu blog-drop">
-                        <a className="-overlay-dropdownItem" href="#">Tək Yazı</a>
+                        <Link className="-overlay-dropdownItem" to="#">Tək Yazı</Link>
 
 
                     </ul>
                 </li>
                 <li>
 
-                    <a href="" className="overlay-nav-link">Əlaqə</a>
+                    <Link to="" className="overlay-nav-link">Əlaqə</Link>
                 </li>
 
             </div>
             </div>
 
 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#"></a>
+                    <Link className="navbar-brand" to="#"></Link>
 
                     <span className="navbar-fabars-icon" ><FaBars className='fabars-icon'  onClick={openOverlay}/></span>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link " aria-current="page" href="#">Ana Səhifə</a>
+                                <Link className="nav-link " aria-current="page" to="#">Ana Səhifə</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Haqqımızda</a>
+                                <Link className="nav-link" to="#">Haqqımızda</Link>
                             </li>
                             <li className="nav-item sehife ">
-                                <a className="nav-link " href="#" >
+                                <Link className="nav-link " to="#" >
                                     Səhifələr <IoMdArrowDropdown className='iodropicon' />
-                                </a>
+                                </Link>
                                 <ul className="dropdownmenu sehife-drop">
-                                    <a className="dropdownItem" href="#">Xidmətlər</a>
-                                    <a className="dropdownItem" href="#">Xidmət Təfərrüatı</a>
-                                    <a className="dropdownItem" href="#">Qiymət Planı</a>
+                                    <Link className="dropdownItem" to="#">Xidmətlər</Link>
+                                    <Link className="dropdownItem" to="#">Xidmət Təfərrüatı</Link>
+                                    <Link className="dropdownItem" to="#">Qiymət Planı</Link>
 
                                 </ul>
                             </li>
                             <li className="nav-item  blog">
-                                <a className="nav-link " href="#" >
+                                <Link className="nav-link " to="#" >
                                     Bloq  <IoMdArrowDropdown className='iodropicon' />
-                                </a>
+                                </Link>
                                 <ul className="dropdownmenu blog-drop">
-                                    <a className="dropdownItem" href="#">Tək Yazı</a>
+                                    <Link className="dropdownItem" to="#">Tək Yazı</Link>
 
 
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Əlaqə</a>
+                                <Link className="nav-link" to="#">Əlaqə</Link>
                             </li>
 
                         </ul>
-                        <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward/>} />
+                        <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward className='navbar-button-icon'/>} />
                     </div>
                 </div>
             </nav>
