@@ -2,10 +2,11 @@
     width: 100%;
     height: 1000px;
     background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/selective-focus-of-happy-handyman-in-uniform-near-service.jpg);
-    background-position: center;
+    background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+   
 }
 
 .home-header-container::before {
@@ -108,3 +109,8 @@
         padding-left: 20px;
     }
 }
+/* @media (max-width: 750px) {
+    .home-header-container{
+        position: ;
+    }
+} */

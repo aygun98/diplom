@@ -135,6 +135,7 @@
 .overlay-arxa{
     position: fixed;
     background-color: #35256d8c;
+    top: 0;
     width: 0;
     height: 100vh;
     z-index: 999999;

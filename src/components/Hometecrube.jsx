@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 
 
 const Hometecrube = () => {
+
+  
+
   return (
     <>
     <div className='home-tecrube'>

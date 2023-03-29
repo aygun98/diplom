@@ -11,17 +11,34 @@
     box-shadow: 0 0 50px #2a1a6663;
 
 }
-@media (max-width:1198px) {
+@media (max-width:1201px) {
+    .home-awards{
+        width: 100%;
+        justify-content: center;
+    }
+    /* .home-awards {
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    } */
+
+}
+@media (max-width:851px){
+    .home-awards{
+        flex-wrap: wrap;
+        width: 70%;
+    }
+}
+@media (max-width:578px) {
 
     .home-awards {
         flex-direction: column;
         align-items: center;
-        width: 500px;
+        width: 50%;
     }
 
 }
-
-@media (max-width:578px) {
+@media (max-width:500px) {
 
     .home-awards {
         flex-direction: column;
