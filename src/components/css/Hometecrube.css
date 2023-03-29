@@ -1,0 +1,156 @@
+.home-tecrube{
+    display: flex;
+    gap: 20px;
+    
+    
+}
+.home-tecrube-img{
+    width: 50%;
+    height: 608px;
+    /* background-color: #2B98E6; */
+}
+.tecrube-img-top {
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/young-repairman-in-protective-workwear-moving-refr-resize-pza1ig578z9jdh8ssp0s4a3mridra6w3urclfwnzvo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    height: 60%;
+
+}
+.tecrube-img-bottom{
+    display: flex;
+    width: 100%;
+   
+    margin-top: -70px;
+    height: 40%;
+}
+.tecrube-img-bottom-left{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/builder-on-a-construction-site-working-on-a-brick-resize-pyzkbbnewqvnjoowcoi04ppm5gie5hag601bq6clgg.jpg);
+    width: 70%;
+    height: 100%;
+    border: 13px solid rgb(255, 255, 255);
+}
+.tecrube-img-bottom-right{
+    text-align: center;
+   
+    background-color: #2B1A66;
+    width: 30%;
+    height:160px ;
+    align-self: flex-end;
+    margin-bottom:13px;
+    padding-left: 10px;
+}
+.tecrube-img-bottom-right h4{
+    color: #fff;
+    font-size: 25px;
+}
+.tecrube-img-bottom-right span{
+    align-items: center;
+    font-size: 75px;
+    font-weight: 900;
+   
+}
+.home-tecrube-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.home-tecrube-text h6{
+color: #2B98E6;
+font-size: 19px;
+font-weight: 600;
+margin: 0;
+}
+.home-tecrube-text h1{
+
+font-size: 42px;
+font-weight: 800;
+margin: 0;
+}
+.home-tecrube-text p{
+    margin: 0;
+color: rgba(0, 0, 0, 0.644);
+font-size: 15px;
+font-weight: 600;
+}
+.home-tecrube-onay{
+    display: flex;
+    gap: 40px;
+}
+.home-tecrube-onay-left, .home-tecrube-onay-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home-tecrube-onay small{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+.home-tecrube-onay-icon{
+    color: #2B98E6;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.home-tecrube-button{
+    width: 300px;
+    background-color: #2B98E6;
+    border: none;
+    padding: 15px 0;
+    color: #fff;
+}
+
+@media (max-width:1346px) {
+    .home-tecrube{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-tecrube-img{
+        width: 70%;
+ 
+    }
+    .home-tecrube-text{
+        width: 70%;
+    }
+}
+@media (max-width:1104px) {
+    .home-tecrube{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-tecrube-img{
+        width: 100%;
+ 
+    }
+    .home-tecrube-text{
+        width: 100%;
+    }
+}
+@media (max-width:587px) {
+    .home-tecrube-onay{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 10px;
+    }
+    .home-tecrube{
+        width: 100%;
+    }
+    .tecrube-img-bottom-right h4{
+        color: #fff;
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    .tecrube-img-bottom-right span{
+        align-items: center;
+        font-size: 45px;
+        font-weight: 900;
+       
+    }
+}

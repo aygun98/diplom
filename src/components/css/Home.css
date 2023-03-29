@@ -1,0 +1,24 @@
+.home-padding{
+    padding: 80px;
+}
+@media (max-width:668px) {
+    .home-padding{
+        padding: 80px 40px;
+    }
+}
+@media (max-width:576px) {
+    .home-padding{
+        padding: 80px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

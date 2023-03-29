@@ -1,5 +1,5 @@
 .navbar{
-    padding: 50px 100px;
+    padding: 30px 100px;
 }
 
 
@@ -17,13 +17,15 @@
 .fabars-icon{
     font-size: 30px;
     cursor: pointer;
-    /* z-index: 1; */
+    z-index: 1;
+    color: #2B1A66;
 }
 .navbar-fabars-icon{
     /* background-color: #2b98e6; */
     padding: 10px;
     border-radius: 10px;
     display: none;
+    border: 1px solid #8b8989dd;
 }
 .navbar-fabars-icon:hover .fabars-icon{
     color: #fff;
@@ -42,7 +44,7 @@
 }
 .nav-link{
     color: #000000;
-    font-weight: 600 !important;
+    font-weight: 700 ;
     font-size: 16px;
 
 }
@@ -57,7 +59,7 @@
     font-size: 16px;
     border: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .navbar-button-icon{
@@ -100,11 +102,11 @@
 
 
 .sehife:hover .iodropicon{
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transition: 1s;
 }
 .blog:hover .iodropicon{
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transition: 1s;
 }
 .dropdownItem{
@@ -188,10 +190,13 @@ width: 340px;
     font-size: 20px;
     margin-left: 5px;
     color: #3a3a3a;
+    transition: 1s;
 
 }
 .overlay-nav-link:hover .overlay-arrow-icon{
     color:#532a7a;
+    
+    transform: rotate(-180deg);
 }
 .overlay-span-cross-icon{
     position: absolute;
@@ -207,6 +212,7 @@ width: 340px;
     color:#35256D;
     font-size: 20px;
     cursor: pointer;
+    z-index: 9;
 }
 .overlay-span-cross-icon:hover{
     background-color:#35256D ;
@@ -250,6 +256,12 @@ width: 340px;
 @media (max-width:800px){
     .navbar{
         padding: 50px 20px;
+    }
+   
+}
+@media (max-width:500px){
+    .navbar{
+        padding: 50px 10px;
     }
    
 }

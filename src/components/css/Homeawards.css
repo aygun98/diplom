@@ -1,0 +1,32 @@
+.home-awards {
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+
+    gap: 17px;
+    width: 1180px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: -100px;
+    box-shadow: 0 0 50px #2a1a6663;
+
+}
+@media (max-width:1198px) {
+
+    .home-awards {
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+}
+
+@media (max-width:578px) {
+
+    .home-awards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,110 @@
+.home-header-container {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/selective-focus-of-happy-handyman-in-uniform-near-service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home-header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, #09031D 10%, #F2295B00 100%);
+    opacity: 0.8;
+    background-color: transparent;
+}
+
+.home-header-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    gap: 10px;
+    padding-left: 160px;
+    padding-top: 280px;
+
+}
+
+.home-header-text h6 {
+    color: #2B98E6;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home-header-text h1 {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.home-header-text h1,
+.home-header-text small {
+    color: #fff;
+}
+
+.home-header-text small {
+    font-size: 15;
+}
+
+.home-header-call {
+    display: flex;
+
+    text-decoration: none;
+    font-size: 32px;
+    background-color: #2B1A66;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.home-header-span-icon {
+
+    background-color: #2B98E6;
+    padding: 6px;
+}
+
+.home-header-phone-icon {
+    color: #fff;
+    font-size: 70px;
+
+}
+
+.home-header-call h2 {
+    color: #fff;
+    font-weight: 800;
+    padding: 15px;
+    margin: 0;
+}
+
+.home-header-call h2 span {
+    color: #2B98E6;
+}
+
+.home-header-left-background {
+    background-color: #2B1A66;
+    width: 145px;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+
+    top: 150px;
+    left: 75px;
+}
+
+/*  */
+@media (max-width: 750px) {
+    .home-header-left-background {
+        left: 0;
+    }
+
+    .home-header-text {
+        padding-left: 20px;
+    }
+}

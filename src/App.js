@@ -30,7 +30,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Haqqimizda" element={<About />} />
+          <Route path="haqqimizda" element={<About />} />
           <Route path="sehifeler" element={<Pages />} />
           <Route path="bloq" element={<Blog />} />
           <Route path="elaqe" element={<Contact />} />

@@ -5,6 +5,7 @@ import { FaBars } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
 import { TfiArrowCircleDown } from 'react-icons/tfi'
 import { IoMdArrowForward} from 'react-icons/io'
+import { IoIosArrowDown} from 'react-icons/io'
 //Button
 import Button from './Button'
 //Link
@@ -19,6 +20,10 @@ const overlayUnvanarxa = useRef()
         overlayElement.current.classList.add('aktiv')
         overlayUnvanarxa.current.classList.add('aktiv-arxa')
        }
+       if(kliklediyimUnvan.classList.contains('navbar-fabars-icon')){
+        overlayElement.current.classList.add('aktiv')
+        overlayUnvanarxa.current.classList.add('aktiv-arxa')
+       }
   }
   const closeOverlay = (e)=>{
        const kliklediyimUnvan = e.target
@@ -26,6 +31,11 @@ const overlayUnvanarxa = useRef()
         overlayElement.current.classList.remove('aktiv')
         overlayUnvanarxa.current.classList.remove('aktiv-arxa')
        }
+       if(kliklediyimUnvan.classList.contains('overlay-span-cross-icon')){
+        overlayElement.current.classList.remove('aktiv')
+        overlayUnvanarxa.current.classList.remove('aktiv-arxa')
+       }
+      
   }
  
 
@@ -43,10 +53,10 @@ const overlayUnvanarxa = useRef()
                 </li>
                 <li>
 
-                    <Link to="" className="overlay-nav-link">Haqqımızda</Link> 
+                    <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <Link to="" className="overlay-nav-link">Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
+                    <Link to="sehifeler" className="overlay-nav-link">Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
                     <ul className="overlay-dropdownmenu overlay-sehife-drop">
                         <Link className="overlay-dropdownItem" to="#">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
@@ -56,7 +66,7 @@ const overlayUnvanarxa = useRef()
 
                 </li>
                 <li>
-                    <Link to="" className="overlay-nav-link">Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
+                    <Link to="bloq" className="overlay-nav-link">Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
                     <ul className="overlay-dropdownmenu blog-drop">
                         <Link className="-overlay-dropdownItem" to="#">Tək Yazı</Link>
 
@@ -65,7 +75,7 @@ const overlayUnvanarxa = useRef()
                 </li>
                 <li>
 
-                    <Link to="" className="overlay-nav-link">Əlaqə</Link>
+                    <Link to="elaqe" className="overlay-nav-link">Əlaqə</Link>
                 </li>
 
             </div>
@@ -74,21 +84,21 @@ const overlayUnvanarxa = useRef()
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="#"></Link>
+                    <Link className="navbar-brand" to="/"></Link>
 
                     <span className="navbar-fabars-icon" ><FaBars className='fabars-icon'  onClick={openOverlay}/></span>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link " aria-current="page" to="#">Ana Səhifə</Link>
+                                <Link className="nav-link " aria-current="page" to="/">Ana Səhifə</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">Haqqımızda</Link>
+                                <Link className="nav-link" to="haqqimizda">Haqqımızda</Link>
                             </li>
                             <li className="nav-item sehife ">
-                                <Link className="nav-link " to="#" >
-                                    Səhifələr <IoMdArrowDropdown className='iodropicon' />
+                                <Link className="nav-link " to="sehifeler" >
+                                    Səhifələr <IoIosArrowDown className='iodropicon' />
                                 </Link>
                                 <ul className="dropdownmenu sehife-drop">
                                     <Link className="dropdownItem" to="#">Xidmətlər</Link>
@@ -98,8 +108,8 @@ const overlayUnvanarxa = useRef()
                                 </ul>
                             </li>
                             <li className="nav-item  blog">
-                                <Link className="nav-link " to="#" >
-                                    Bloq  <IoMdArrowDropdown className='iodropicon' />
+                                <Link className="nav-link " to="bloq" >
+                                    Bloq  <IoIosArrowDown className='iodropicon' />
                                 </Link>
                                 <ul className="dropdownmenu blog-drop">
                                     <Link className="dropdownItem" to="#">Tək Yazı</Link>
@@ -108,7 +118,7 @@ const overlayUnvanarxa = useRef()
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">Əlaqə</Link>
+                                <Link className="nav-link" to="elaqe">Əlaqə</Link>
                             </li>
 
                         </ul>
