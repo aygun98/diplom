@@ -9,7 +9,7 @@ const Homeplan = () => {
         <>
             <div className='home-plan'>
 
-                <div className='home-plan-left' data-aos="fade-right" data-aos-delay="300">
+                <div className='home-plan-left' data-aos="fade-right" >
                     <h5 data-aos="fade-right" data-aos-delay="500">Hər şeyi qorumaq</h5>
                     <h1 data-aos="fade-right" data-aos-delay="700">Necə işləyirik</h1>
                     <p data-aos="fade-right" data-aos-delay="800">İcazə verin, dərdini tərifləyim, hamıdan yaxşısı olsun.</p>

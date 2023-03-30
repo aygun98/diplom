@@ -109,8 +109,8 @@
         padding-left: 20px;
     }
 }
-/* @media (max-width: 750px) {
+@media (max-width: 995px) {
     .home-header-container{
-        position: ;
+       background-position: 70%;
     }
-} */
+}

@@ -9,9 +9,9 @@ const Homexidmet = () => {
    <>
    <div className='home-xidmet'>
    <div className='home-xidmet-text'> 
-    <h6 data-aos="fade-right" data-aos-delay="300">Bizim xidmətlə</h6>
-    <h1 data-aos="fade-left" data-aos-delay="500">Hər Növ Təmir Xidməti Göstərilir</h1>
-    <p data-aos="fade-right" data-aos-delay="600">Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
+    <h6 data-aos="fade-right">Bizim xidmətlə</h6>
+    <h1 data-aos="fade-left" >Hər Növ Təmir Xidməti Göstərilir</h1>
+    <p data-aos="fade-right" >Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
     </div>
     <div className=' home-xidmet-card-container'>
       <div className='home-xidmet-card-container-top'>

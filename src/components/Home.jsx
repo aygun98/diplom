@@ -6,6 +6,7 @@ import Homeawards from './Homeawards'
 import Hometecrube from './Hometecrube'
 import Homeplan from './Homeplan'
 import Homexidmet from './Homexidmet'
+import Homeqorumaq from './Homeqorumaq'
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       </div>
         <Homeplan/>
         <Homexidmet/>
+        <Homeqorumaq/>
 
     </>
   )

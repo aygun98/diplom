@@ -29,6 +29,7 @@
 .home-xidmet-card-container{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .home-xidmet-card-container-top, .home-xidmet-card-container-bottom{
     display: flex;

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const HomexidmetCard = ({sekil, h1}) => {
   return (
-    <div className='home-xidmet-card' data-aos="zoom-in"  data-aos-delay="1000">
+    <div className='home-xidmet-card' data-aos="zoom-in" >
         <div className="home-xidmet-card-top"><img src={sekil} alt="" /></div>
         <div className="home-xidmet-card-bottom">
             <h1>{h1}</h1>
