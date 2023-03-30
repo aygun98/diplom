@@ -1,0 +1,140 @@
+.home-plan{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+    /* background-color: aquamarine; */
+}
+
+/*  */
+.home-plan-left{
+    background-color: #291960;
+    color: #fff;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+    /* justify-content: space-between; */
+    height: 500px;
+    
+    
+}
+.home-plan-left h5{
+    color:#2B98E6 ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.home-plan-left h1{
+  
+    font-size: 42px;
+    font-weight: 800;
+}
+.home-plan-left p{
+  
+    font-size: 15px;
+    font-weight: 500;
+}
+.home-plan-left-button{
+    background-color: #2B98E6;
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 16;
+    font-weight: 800px;
+    border: none;
+    width: 200px;
+}
+/*  */
+.home-plan-right{
+    display: flex;
+    gap: 20px;
+    position:absolute;
+    right: 0;
+    top: 300px;
+    z-index: 1;
+}
+.home-plan-right-card{
+    background-color: #2B98E6;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+.home-plan-right-card h6{
+  color:#291960;
+  font-weight: 700;
+}
+.home-plan-right-card h1{
+    font-size: 25px;
+  color:#fff;
+  font-weight: 700;
+}
+.home-plan-right-card p{
+  color:#fff;
+  font-weight: 500;
+}
+.home-plan-right-altxett{
+ background-color: #fff;
+ width: 53px;
+ height: 2px;
+}
+
+/* media */
+
+@media (max-width:1297px) {
+    .home-plan-right-card{
+        width: 200px;
+        
+    }
+}
+@media (max-width:1076px){
+    .home-plan-left h1{
+  
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .home-plan-left p{
+  
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+@media (max-width:1027px){
+    .home-plan{
+        flex-direction: column;
+    }
+    .home-plan-right{
+        position: relative;
+        margin-top: -400px;
+        z-index: 1;
+    }
+    .home-plan-left h1{
+  
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .home-plan-left p{
+  
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .home-plan-left{
+        width: 100%;
+    }
+    
+}
+@media (max-width:1027px){
+    .home-plan-right{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .home-plan-right-card{
+        width: 100%;
+        height: 200px;
+    }
+}

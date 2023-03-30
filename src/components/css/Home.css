@@ -1,6 +1,11 @@
 .home-padding{
     padding: 80px;
 }
+@media (max-width:1297px){
+    .home-padding{
+        padding: 80px 0;
+    }
+}
 @media (max-width:668px) {
     .home-padding{
         padding: 80px 40px;

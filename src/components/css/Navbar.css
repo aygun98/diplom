@@ -1,8 +1,14 @@
 .navbar{
     padding: 30px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
 }
 
-
+.sticky-padding{
+    padding: 10px 100px;
+}
 
 .navbar-brand{
     display: inline-block;
@@ -12,6 +18,7 @@
     background-repeat: no-repeat;
     min-width: 172px;
     height: 50px;
+    
 }
 /* fabars */
 .fabars-icon{
@@ -171,9 +178,35 @@ width: 340px;
     padding: 10px;
     padding-left: 15px;
 }
-.overlay-dropdownmenu{
+
+
+.overlay-dropdownMenu{
     display: none;
 }
+
+.drop-ac{
+    transform: translateY(5px);
+    
+    display: block;
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0;
+    padding: 0px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.overlay-dropdownItem{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    /* margin: 5px; */
+}
+.overlay-dropdownItem:hover{
+    
+    background-color:#2B1A66;
+    color: white;
+}
+
 .overlay-nav-link{
     color: #000000;
     text-decoration: none;
@@ -228,12 +261,15 @@ width: 340px;
 /* media */
 @media (max-width:1255px){
     .navbar{
-        padding: 50px 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
+   
 }
 @media (max-width:1135px){
     .navbar{
-        padding: 50px 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .navbar-button{
         width: 200px;
@@ -243,7 +279,8 @@ width: 340px;
 }
 @media (max-width:991px) {
     .navbar{
-        padding: 50px 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .navbar-button{
         width: 200px;
@@ -256,13 +293,15 @@ width: 340px;
 }
 @media (max-width:800px){
     .navbar{
-        padding: 50px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
    
 }
 @media (max-width:500px){
     .navbar{
-        padding: 50px 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
    
 }

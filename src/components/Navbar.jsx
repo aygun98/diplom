@@ -12,6 +12,21 @@ import Button from './Button'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+//navbar scroll fixed
+window.addEventListener('scroll', navaScrollVer)
+
+function navaScrollVer() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.querySelector('.navbar').classList.add('sticky-padding')
+  }
+  else {
+    document.querySelector('.navbar').classList.remove('sticky-padding')
+  }
+
+}
+
+// overlay
 const overlayElement = useRef()
 const overlayUnvanarxa = useRef()
   const openOverlay = (e)=>{
@@ -38,6 +53,40 @@ const overlayUnvanarxa = useRef()
       
   }
  
+//
+const dropSehife = useRef()
+const dropSehifebloq = useRef()
+const dropSehifeAc = (e)=>{
+const kliklediyimUnvan = e.target
+if(kliklediyimUnvan.classList.contains('overlay-sehife')){
+dropSehife.current.classList.add('drop-ac')
+}
+
+}
+const baglaSehifeOverlay = (e)=>{
+const kliklediyimUnvan = e.target
+
+if(kliklediyimUnvan.classList.contains('overlay-sehife')){
+    dropSehife.current.classList.remove('drop-ac')
+    }
+}
+const dropBloqeAc = (e)=>{
+const kliklediyimUnvan = e.target
+if(kliklediyimUnvan.classList.contains('overlay-bloq')){
+    dropSehifebloq.current.classList.add('drop-ac')
+}
+
+}
+const baglaBloqOverlay = (e)=>{
+const kliklediyimUnvan = e.target
+
+if(kliklediyimUnvan.classList.contains('overlay-bloq')){
+    dropSehifebloq.current.classList.remove('drop-ac')
+    }
+}
+
+
+
 
 
 
@@ -56,8 +105,8 @@ const overlayUnvanarxa = useRef()
                     <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <Link to="sehifeler" className="overlay-nav-link">Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
-                    <ul className="overlay-dropdownmenu overlay-sehife-drop">
+                    <Link to="sehifeler" className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} onDoubleClick={baglaSehifeOverlay}>Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
+                    <ul className="overlay-sehife-drop overlay-dropdownMenu " ref={dropSehife}>
                         <Link className="overlay-dropdownItem" to="#">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
                         <Link className="overlay-dropdownItem" to="#">Qiymət Planı</Link>
@@ -66,9 +115,9 @@ const overlayUnvanarxa = useRef()
 
                 </li>
                 <li>
-                    <Link to="bloq" className="overlay-nav-link">Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
-                    <ul className="overlay-dropdownmenu blog-drop">
-                        <Link className="-overlay-dropdownItem" to="#">Tək Yazı</Link>
+                    <Link to="bloq" className="overlay-bloq overlay-nav-link  " onClick={dropBloqeAc} onDoubleClick={baglaBloqOverlay}>Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
+                    <ul className=" bloq-drop overlay-dropdownMenu " ref={dropSehifebloq}>
+                        <Link className="overlay-dropdownItem" to="#">Tək Yazı</Link>
 
 
                     </ul>
@@ -86,7 +135,7 @@ const overlayUnvanarxa = useRef()
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/"></Link>
 
-                    <span className="navbar-fabars-icon" ><FaBars className='fabars-icon'  onClick={openOverlay}/></span>
+                    <span className="navbar-fabars-icon" ><FaBars className='fabars-icon'  onClick={openOverlay} /></span>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">

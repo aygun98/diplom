@@ -1,5 +1,6 @@
 import React from 'react'
-import {IoMdArrowForward} from 'react-icons/io'
+import './css/Button.css'
+// import {IoMdArrowForward} from 'react-icons/io'
 
 const Button = ({klass, daxiliYazi, daxiliIcon}) => {
   return (
