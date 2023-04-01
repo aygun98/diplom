@@ -199,3 +199,9 @@ justify-content: center;
         padding-bottom: 10px;
     }
 }
+@media (max-width:862px) {
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+}

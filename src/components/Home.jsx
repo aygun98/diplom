@@ -8,6 +8,7 @@ import Homeplan from './Homeplan'
 import Homexidmet from './Homexidmet'
 import Homeqorumaq from './Homeqorumaq'
 import HomeReyler from './HomeReyler'
+import HomeSponsorlar from './HomeSponsorlar'
 
 
 
@@ -26,6 +27,7 @@ const Home = () => {
         <Homexidmet/>
         <Homeqorumaq/>
         <HomeReyler/>
+        <HomeSponsorlar/>
         </div>
     </>
   )
