@@ -1,0 +1,75 @@
+.home-xeberler{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:50px 100px
+}
+.home-xeberler-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-xeberler-top h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2B98E6;
+}
+.home-xeberler-top h1{
+    font-size: 42px;
+    font-weight: 800;
+    
+}
+.home-xeberler-top p{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.685);
+    
+}
+/*  */
+.home-xeberler-bottom{
+ display: flex;
+ justify-content: space-between;
+ /* gap: 30px; */
+}
+
+.home-xeberler-bottom-left-img{
+    width: 100%;
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/serious-male-plumber-in-working-overall-fixing-sin-resize.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 355px;
+  height: 256.78px;
+}
+.home-xeberler-bottom-center-img{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/we-can-help-you-male-builder-wearing-tool-belt-ca-resize.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 355px;
+  height: 256.78px;
+}
+
+.home-xeberler-bottom-left h1, .home-xeberler-bottom-center h1 {
+    font-size: 25px;
+    
+}
+.home-xeberler-bottom-left p, .home-xeberler-bottom-center p {
+    font-size: 15px;
+   
+    color: #626262;
+}
+.home-xeberler-bottom-left h6, .home-xeberler-bottom-center h6 {
+    font-size: 15px;
+    
+    color: #626262;
+}
+.home-xeberler-bottom-right p{
+    font-size: 15px;
+    
+    color: #626262;
+}
+.home-xeberler-btn{
+    width: 150px;
+    padding: 15px 0;
+}
