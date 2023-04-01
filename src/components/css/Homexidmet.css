@@ -47,13 +47,22 @@
     }
 }
 @media (max-width:576px){
+   
     .home-xidmet-text h1{
         font-size: 25px;
         
     }
 }
+
 @media (max-width:1027px){
     .home-xidmet{
         padding-top:200px ;
+    }
+}
+@media (max-width:500px){
+   
+    .home-xidmet-text{
+     padding:0 30px;
+        
     }
 }

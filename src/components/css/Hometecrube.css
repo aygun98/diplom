@@ -146,6 +146,7 @@ font-weight: 600;
         }
     /* */
 }
+
 @media (max-width:1079px) {
     .tecrube-img-top {
         width: 100%;
@@ -155,6 +156,8 @@ font-weight: 600;
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .home-tecrube-img{
         width: 70%;
@@ -183,11 +186,24 @@ font-weight: 600;
         width: 100%;
     }
 }
+@media (max-width:991px) {
+    .home-tecrube{
+        
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
 @media (max-width:500px) {
     .home-tecrube-onay{
         flex-direction: column;
     }
     .home-tecrube-img{
         width: 100%;
+    }
+    .home-tecrube{
+        
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
