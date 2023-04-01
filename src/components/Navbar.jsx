@@ -53,37 +53,25 @@ const overlayUnvanarxa = useRef()
       
   }
  
-//
+// sehife ve blog drop acmaq overal menuda
 const dropSehife = useRef()
 const dropSehifebloq = useRef()
 const dropSehifeAc = (e)=>{
 const kliklediyimUnvan = e.target
 if(kliklediyimUnvan.classList.contains('overlay-sehife')){
-dropSehife.current.classList.add('drop-ac')
+dropSehife.current.classList.toggle('drop-ac')
 }
 
 }
-const baglaSehifeOverlay = (e)=>{
-const kliklediyimUnvan = e.target
 
-if(kliklediyimUnvan.classList.contains('overlay-sehife')){
-    dropSehife.current.classList.remove('drop-ac')
-    }
-}
 const dropBloqeAc = (e)=>{
 const kliklediyimUnvan = e.target
 if(kliklediyimUnvan.classList.contains('overlay-bloq')){
-    dropSehifebloq.current.classList.add('drop-ac')
+    dropSehifebloq.current.classList.toggle('drop-ac')
 }
 
 }
-const baglaBloqOverlay = (e)=>{
-const kliklediyimUnvan = e.target
 
-if(kliklediyimUnvan.classList.contains('overlay-bloq')){
-    dropSehifebloq.current.classList.remove('drop-ac')
-    }
-}
 
 
 
@@ -105,7 +93,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                     <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <Link to="sehifeler" className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} onDoubleClick={baglaSehifeOverlay}>Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
+                    <Link to="sehifeler" className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
                     <ul className="overlay-sehife-drop overlay-dropdownMenu " ref={dropSehife}>
                         <Link className="overlay-dropdownItem" to="#">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
@@ -115,7 +103,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
 
                 </li>
                 <li>
-                    <Link to="bloq" className="overlay-bloq overlay-nav-link  " onClick={dropBloqeAc} onDoubleClick={baglaBloqOverlay}>Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
+                    <Link to="bloq" className="overlay-bloq overlay-nav-link  " onClick={dropBloqeAc} >Bloq <TfiArrowCircleDown className='overlay-arrow-icon'/></Link>
                     <ul className=" bloq-drop overlay-dropdownMenu " ref={dropSehifebloq}>
                         <Link className="overlay-dropdownItem" to="#">Tək Yazı</Link>
 

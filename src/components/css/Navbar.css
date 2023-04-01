@@ -194,6 +194,8 @@ width: 340px;
     margin: 0;
     padding: 0px;
 border: 1px solid rgba(0, 0, 0, 0.2);
+border-left: none;
+border-right: none;
 }
 .overlay-dropdownItem{
     text-decoration: none;
