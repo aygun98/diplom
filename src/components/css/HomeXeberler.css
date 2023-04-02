@@ -57,6 +57,7 @@
   background-size: cover;
   width: 100%;
   height: 256.78px;
+  transition: all .4s ease;
 }
 .home-xeberler-bottom-left-img p, .home-xeberler-bottom-center-img p{
 color: rgb(255, 255, 255) !important;
@@ -76,6 +77,11 @@ margin: 5px;
   background-size: cover;
   width: 100%;
   height: 256.78px;
+  transition: all .4s ease;
+}
+.home-xeberler-bottom-left-img:hover, .home-xeberler-bottom-center-img:hover{
+   transform: scale(1.05) rotate(2deg);
+   opacity: .8;
 }
 
 .home-xeberler-bottom-left h1, .home-xeberler-bottom-center h1 {

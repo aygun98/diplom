@@ -17,14 +17,14 @@ const HomeXeberler = () => {
         </div>
         <div className="home-xeberler-bottom">
             <div className="home-xeberler-bottom-left">
-                <div className='home-xeberler-bottom-left-img'><p>Məsləhətlər və Hiylə</p></div>
+            <Link to="">       <div className='home-xeberler-bottom-left-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
                 <h1>Drenajın təmizlənməsinə ehtiyacınız olduğunu necə bilmək olar</h1>
                 <h6><BsCalendar className='home-calenar-icon'/> 8 dekabr 2022-ci il</h6>
                 <p>Ana səhifə <MdKeyboardArrowRight/>  Tək Yazı Drenaj Təmizlənməsinə Ehtiyac Olduğunuzu Necə Bilirsiniz</p>
                 <Link to="">Daha çox oxu <BsArrowRight/></Link>
             </div>
             <div className="home-xeberler-bottom-center">
-              <div className='home-xeberler-bottom-center-img'><p>Məsləhətlər və Hiylə</p></div>
+           <Link to="">  <div className='home-xeberler-bottom-center-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
                 <h1>Bir neçə dəqiqə ərzində edə biləcəyiniz 10 ev təmiri</h1>
                 <h6><BsCalendar className='home-calenar-icon'/> 8 dekabr 2022-ci il</h6>
                 <p>Ana səhifə <MdKeyboardArrowRight/>  Tək Yazı Drenaj Təmizlənməsinə Ehtiyac Olduğunuzu Necə Bilirsiniz</p>
