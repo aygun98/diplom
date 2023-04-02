@@ -1,0 +1,67 @@
+
+.compleHeader-container{
+  
+    background-image:url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/a-person-holding-toolbox-for-repair-works-resize1.jpg);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 420px;
+   position: relative;
+}
+.compleHeader-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, #09031D 10%, #F2295B00 100%);
+    opacity: 0.8;
+    background-color: transparent;
+}
+.compleHeader-text{
+    position: relative;
+    z-index: 1;
+    padding: 130px  0  0 120px ;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.compleHeader-text h6{
+  color: #2b98e6;
+  font-size: 16px;
+  font-weight: 700;
+}
+.compleHeader-text h1{
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 800;
+}
+.compleHeader-text p{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.compleHeader-back{
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 85px;
+    width: 96px;
+    height: 255px;
+    background-color: #2b1a66;
+}
+@media (max-width:750px) {
+    .compleHeader-back{
+        left: 0;
+    }
+    .compleHeader-text{
+        padding-left: 20px;
+        
+    }
+    .compleHeader-container{
+       background-position:70% ;
+    }
+}

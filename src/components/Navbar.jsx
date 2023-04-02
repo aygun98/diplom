@@ -10,6 +10,8 @@ import { IoIosArrowDown} from 'react-icons/io'
 import Button from './Button'
 //Link
 import { Link } from 'react-router-dom'
+//moadlform
+// import NavModulForm from './NavModulForm'
 
 const Navbar = () => {
 
@@ -160,6 +162,8 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
 
                         </ul>
                         <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward className='navbar-button-icon'/>} />
+                      
+                       
                     </div>
                 </div>
             </nav>
