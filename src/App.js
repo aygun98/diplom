@@ -8,8 +8,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
-import Pages from './components/Pages';
+import Services from './components/Services';
+import ServiceDetail from "./components/ServiceDetail";
+import Pricing from "./components/Pricing";
 import Blog from './components/Blog';
+import SinglePost from './components/SinglePost'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -31,8 +34,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="haqqimizda" element={<About />} />
-          <Route path="sehifeler" element={<Pages />} />
+          <Route path="xidmetler" element={<Services/>} />
+          <Route path="xidmet tefferuati" element={<ServiceDetail/>} />
+          <Route path="qiymet" element={<Pricing/>} />
           <Route path="bloq" element={<Blog />} />
+          <Route path="sonyazi" element={<SinglePost />} />
           <Route path="elaqe" element={<Contact />} />
 
         </Routes>

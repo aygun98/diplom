@@ -95,9 +95,9 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                     <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <Link to="sehifeler" className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></Link>
+                    <a href='' className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
                     <ul className="overlay-sehife-drop overlay-dropdownMenu " ref={dropSehife}>
-                        <Link className="overlay-dropdownItem" to="#">Xidmətlər</Link>
+                        <Link className="overlay-dropdownItem" to="xidmetler">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
                         <Link className="overlay-dropdownItem" to="#">Qiymət Planı</Link>
 
@@ -136,13 +136,13 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                                 <Link className="nav-link" to="haqqimizda">Haqqımızda</Link>
                             </li>
                             <li className="nav-item sehife ">
-                                <Link className="nav-link " to="sehifeler" >
+                                <a className="nav-link " href='#' >
                                     Səhifələr <IoIosArrowDown className='iodropicon' />
-                                </Link>
+                                </a>
                                 <ul className="dropdownmenu sehife-drop">
-                                    <Link className="dropdownItem" to="#">Xidmətlər</Link>
-                                    <Link className="dropdownItem" to="#">Xidmət Təfərrüatı</Link>
-                                    <Link className="dropdownItem" to="#">Qiymət Planı</Link>
+                                    <Link className="dropdownItem" to="xidmetler">Xidmətlər</Link>
+                                    <Link className="dropdownItem" to="xidmet tefferuati">Xidmət Təfərrüatı</Link>
+                                    <Link className="dropdownItem" to="qiymet">Qiymət Planı</Link>
 
                                 </ul>
                             </li>
@@ -151,7 +151,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                                     Bloq  <IoIosArrowDown className='iodropicon' />
                                 </Link>
                                 <ul className="dropdownmenu blog-drop">
-                                    <Link className="dropdownItem" to="#">Tək Yazı</Link>
+                                    <Link className="dropdownItem" to="sonyazi">Tək Yazı</Link>
 
 
                                 </ul>
