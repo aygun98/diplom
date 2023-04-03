@@ -1,0 +1,85 @@
+.about-end{
+    padding: 100px;
+    width: 100%;
+}
+
+.about-end-top{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/handsome-young-professional-repairman-with-tool-be-resize1a-pzbe3sma8u6hv0rjh2fqq4abu466q4klnonut8i5pg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+}
+.about-end-bottom-container{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+.about-end-bottom{
+    background-color: #2b1a66;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    padding: 40px;
+    width: 550px;
+    position: absolute;
+    right: 80px;
+    top: -100px;
+    
+}
+.about-end-bottom-icons{
+    font-size: 40px;
+    color: #fff;
+}
+.about-end-bottom-nomre-icon-margin{
+    margin-right: -8px;
+}
+.about-end-bottom h1{
+font-size: 25px;
+font-weight: 700;
+color: #fff;
+}
+.about-end-bottom h6{
+font-size: 16px;
+font-weight: 700;
+color: #fff;
+}
+
+/* media */
+@media (max-width:1255px) {
+    .about-end{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:1135px) {
+    .about-end{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:991px) {
+    .about-end{
+        padding: 100px 50px;
+    }
+    .about-end-top{
+        background-position: 5%;
+    }
+}
+@media (max-width:800px) {
+    .about-end{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:768px) {
+    .about-end-bottom{
+        position: relative;
+        /* top: -15; */
+        right: -50px;
+        width: 90%;
+    }
+    .about-end-top{
+        background-position: 15%;
+    }
+}
