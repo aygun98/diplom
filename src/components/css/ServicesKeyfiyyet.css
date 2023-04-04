@@ -1,0 +1,140 @@
+.service-keyfiyyet-container{
+    display: flex;
+    padding: 100px;
+    gap: 50px;
+    
+}
+
+
+.service-keyfiyyet-left{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/builder-portrait-near-the-door-resize.jpg);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:570px;
+    min-width: 570px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.service-keyfiyyet-left-text-qutu{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    background-color: #2b1a66;
+    font-size: 70px;
+    color: #fff;
+    width: 280px;
+    height: 330px;
+    gap: 20px;
+    padding: 40px;
+
+    /* text-align: center; */
+}
+.service-keyfiyyet-left-text-qutu h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.service-keyfiyyet-left-text-qutu p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.service-keyfiyyet-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+
+}
+
+.service-keyfiyyet-right h6{
+    font-size: 20px;
+    color: #2b98e6;
+    font-weight: 700;
+}
+.service-keyfiyyet-right h1{
+    font-size: 42px;
+    font-weight: 800;
+}
+.service-keyfiyyet-right p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.service-keyfiyyet-right-top-right h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.service-keyfiyyet-right-top-right p{
+    font-size: 15px;
+}
+.service-keyfiyyet-right-top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.service-keyfiyyet-right-top-left{
+    font-size: 50px;
+    color: #ffffff;
+    width: 90px;
+    height: 90px;
+    background-color: #2b98e6;
+    text-align: center;
+}
+
+@media (max-width:1255px) {
+    .service-keyfiyyet-container{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    .service-keyfiyyet-container{
+        padding: 100px 20px;
+    }
+    .service-keyfiyyet-left{
+        background-position:30% ;
+    }
+}
+@media (max-width:991px) {
+    .service-keyfiyyet-container{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .service-keyfiyyet-container{
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1120px) {
+    .service-keyfiyyet-container{
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+    .service-keyfiyyet-left{
+        background-position:  20%;
+        width: 100%;
+    }
+    .service-keyfiyyet-right{
+        width: 100%;
+    }
+}
+@media (max-width:751px) {
+    .service-keyfiyyet-left{
+        background-position-y: 20%;
+        background-position-x: 20% !important;
+      
+    }
+    .service-keyfiyyet-left-text-qutu{
+        width: 240px;
+        padding: 20px;
+    }
+    .service-keyfiyyet-right>h1{
+        font-size: 37px;
+    }
+}

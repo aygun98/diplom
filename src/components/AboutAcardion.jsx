@@ -2,7 +2,7 @@ import React from 'react'
 import './css/AboutAcardion.css'
 import {VscTools} from 'react-icons/vsc'
 import {BsBricks} from 'react-icons/bs'
-import {FaRegCommentAlt} from 'react-icons/fa'
+import {IoIosPeople} from 'react-icons/io'
 
 const AboutAcardion = () => {
     let acc = document.getElementsByClassName("accordion");
@@ -22,6 +22,10 @@ const AboutAcardion = () => {
             });
         }
     }
+
+
+
+ 
     return (
         <>
         <div className='about-acardion-header-menu-container'>
@@ -34,13 +38,12 @@ const AboutAcardion = () => {
         <div className='about-acardion-container'>
 
             <div className='acardion-div'>
-                <div class="accordion" onClick={ac}>
-                    <VscTools className='acardion-icon'/>
+                <div class="accordion" onClick={ac} >
+                    <VscTools className='acardion-icon' />
                     <h1>Unudulmaz Təcrübə</h1>
                     </div>
-                <div class="panel">
-                    <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.
-                    </p>
+                  <div class="panel"> 
+                  <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi. </p>
                 </div>
             </div>
             <div className='acardion-div'>
@@ -48,16 +51,16 @@ const AboutAcardion = () => {
                     <BsBricks className='acardion-icon'/>
                   <h1>Keyfiyyətə Nəzarət Sistemi</h1>
                     </div>
-                <div class="panel">
+                     <div class="panel">
                     <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.</p>
                 </div>
             </div>
             <div className='acardion-div'>
                 <div class="accordion" onClick={ac}>
-                    <FaRegCommentAlt className='acardion-icon'/>
+                    <IoIosPeople className='acardion-icon'/>
                     <h1>Peşəkar və İxtisaslı</h1>
                     </div>
-                <div class="panel">
+                     <div class="panel">
                     <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.</p>
                 </div>
             </div>
