@@ -1,13 +1,15 @@
 import React, {useRef} from 'react'
+import Data from '../data.json'
 import './css/Navbar.css'
-import { IoMdArrowDropdown } from 'react-icons/io'
+import Searchbtn from './Searchbtn'
+// import { IoMdArrowDropdown } from 'react-icons/io'
 import { FaBars } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
 import { TfiArrowCircleDown } from 'react-icons/tfi'
-import { IoMdArrowForward} from 'react-icons/io'
+// import { IoMdArrowForward} from 'react-icons/io'
 import { IoIosArrowDown} from 'react-icons/io'
 //Button
-import Button from './Button'
+// import Button from './Button'
 //Link
 import { Link } from 'react-router-dom'
 //moadlform
@@ -95,7 +97,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                     <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
                 </li>
                 <li>
-                    <a href='' className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
+                    <a href='#' className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
                     <ul className="overlay-sehife-drop overlay-dropdownMenu " ref={dropSehife}>
                         <Link className="overlay-dropdownItem" to="xidmetler">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="#">Xidmət Təfərrüatı</Link>
@@ -161,8 +163,8 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
                             </li>
 
                         </ul>
-                        <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward className='navbar-button-icon'/>} />
-                      
+                        {/* <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward className='navbar-button-icon'/>} /> */}
+                       <Searchbtn placeholders="axtar" datalar={Data}/>
                        
                     </div>
                 </div>
