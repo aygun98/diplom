@@ -1,0 +1,112 @@
+.service-xidmet-qiymeti{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+} 
+
+
+
+.service-xidmet-qiymeti-bottom{
+
+    display: flex;
+    gap: 40px;
+}
+.service-xidmet-qiymeti-bottom-left, .service-xidmet-qiymeti-bottom-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.service-xidmet-qiymeti-bottom-card{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    align-items: center;
+}
+.service-xidmet-qiymeti-bottom-card-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 80px;
+}
+.service-xidmet-qiymeti-bottom-card-img1{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/side-view-of-handsome-bearded-electrician-repairin-resize-pyzlpgdi6sqbll1zjiezj3aa1rnpah2jrti9102gm8.jpg);
+}
+.service-xidmet-qiymeti-bottom-card-img2{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/bearded-handyman-lying-on-floor-near-toolbox-in-ba-resize-pyp0udbgtlafav65nbiazjadfxumhy0ic90963mpb4.jpg);
+}
+.service-xidmet-qiymeti-bottom-card-img3{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/handsome-smiling-young-cleaner-holding-bucket-with-resize-pz06efcmrsjh7qxxfj2dp3lz3jsduik0v341rvhp5s.jpg);
+}
+.service-xidmet-qiymeti-bottom-card-img4{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/professional-goods-move-service-use-truck-carry-pe-resize-pz06jdxyubbyhnqigo9huujjyrc4h090vn2ayg4wbk.jpg);
+}
+.service-xidmet-qiymeti-bottom-card-text{
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    justify-content: center;
+}
+
+.service-xidmet-qiymeti-bottom-card h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+.service-xidmet-qiymeti-bottom-card p{
+    font-size:15px;
+   color: #626262;
+   margin: 0;
+}
+.service-xidmet-qiymeti-bottom-card h1{
+    font-size:60px;
+    font-weight: 800;
+   color: #2b98e6;
+}
+
+/* media */
+
+@media (max-width:1255px) {
+    .service-xidmet-qiymeti{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:1135px) {
+    .service-xidmet-qiymeti{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:991px) {
+    .service-xidmet-qiymeti{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .service-xidmet-qiymeti{
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1100px) {
+    .service-xidmet-qiymeti-bottom{
+        flex-direction: column;
+    }
+    .service-xidmet-qiymeti-bottom-card{
+        justify-content: space-around;
+    }
+}
+@media (max-width:565px) {
+    
+    .service-xidmet-qiymeti-bottom-card{
+        flex-direction: column;
+    }
+    .service-xidmet-qiymeti-bottom-card-text{
+        align-items: center;
+    }
+    .service-xidmet-qiymeti-bottom-card-img{
+        width: 100%;
+        height: 400px;
+    }
+}
