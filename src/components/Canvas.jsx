@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-// import './css/Canvars.css'
+// import 'react-circular-progressbar/dist/styles.css';
+import './css/Canvars.css'
 
-const Canvas = () => {
+const Canvas = ({faiz}) => {
 
    
         const [percentage, setPercentage] = useState(0);
@@ -11,7 +11,7 @@ const Canvas = () => {
      
         useEffect(() => {
           setTimeout(() => {
-            if (percentage < 86) {
+            if (percentage < faiz) {
               setPercentage(percentage + 1);
             }
           }, 100);
@@ -21,9 +21,9 @@ const Canvas = () => {
     
   return (
    <>
-  <div style={{textAlign:"center"}} >
+  <div className='canvas-conatainer' style={{textAlign:"center"}} >
       
-      <div style={{ width: 150, marginLeft: 550}}>
+      <div style={{ width: 200}}>
         <CircularProgressbar value={percentage} text={`${percentage}%`} />
       </div>
     </div>
