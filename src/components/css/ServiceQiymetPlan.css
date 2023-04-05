@@ -1,0 +1,133 @@
+.service-qiymet-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px;
+}
+
+.service-qiymet-plan-top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+    
+}
+.service-qiymet-plan-top > h6{
+    font-size: 20px;
+    color: #2b98e6;
+    font-weight: 700;
+}
+.service-qiymet-plan-top > h1{
+    font-size: 41px;
+    
+    font-weight: 900;
+    text-align: center;
+}
+.service-qiymet-plan-top > p{
+    text-align: center;
+    font-size: 15px;
+    color: #626262;
+    
+}
+
+/*  */
+.service-qiymet-plan-bottom{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+.service-qiymet-plan-bottom-card{
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+.service-qiymet-plan-bottom-card>h2{
+    font-size: 32px;
+    font-weight: 900;
+}
+.service-qiymet-plan-bottom-card>h1{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    /* color: #2b98e6; */
+}
+.service-qiymet-plan-bottom-card>h1>span{
+    font-size: 60px;
+    font-weight: 900; 
+    color: #2b98e6;
+}
+.service-qiymet-plan-bottom-card>h3{
+    font-size: 20px;
+    font-weight: 800; 
+    /* color: #2b98e6; */
+}
+.service-qiymet-plan-bottom-card>p{
+    font-size: 15px;
+    font-weight: 600; 
+    color: #626262;
+}
+.service-qiymet-plan-bottom-home-icon{
+    font-size: 60px;
+    color: #2b98e6;
+}
+.service-qiymet-plan-bottom-check-icon{
+    font-size: 25px;
+    color: #2b98e6;
+    margin-right: 8px;
+}
+.service-qiymet-plan-bottom-btn{
+    width: 100%;
+    padding: 20px 0;
+}
+.service-qiymet-plan-bottom-card:hover{
+    background-color: #2b1a66;
+    color: white;
+}
+.service-qiymet-plan-bottom-card:hover p{
+
+    color: white;
+}
+/* media */
+@media (max-width:1255px) {
+    .service-qiymet-plan{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    .service-qiymet-plan{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:991px) {
+    .service-qiymet-plan{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .service-qiymet-plan{
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1051px) {
+    .service-qiymet-plan-bottom{
+        flex-direction: column;
+       width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-qiymet-plan-bottom-card{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+@media (max-width:557px) {
+   
+    .service-qiymet-plan-bottom-card{
+       
+        width: 100%;
+    }
+}
