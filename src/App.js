@@ -38,7 +38,7 @@ function App() {
           <Route path="xidmet tefferuati" element={<ServiceDetail/>} />
           <Route path="qiymet" element={<Pricing/>} />
           <Route path="bloq" element={<Blog />} />
-          <Route path="sonyazi" element={<SinglePost />} />
+          <Route path="ferqlerimiz" element={<SinglePost />} />
           <Route path="elaqe" element={<Contact />} />
 
         </Routes>

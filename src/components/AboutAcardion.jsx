@@ -39,7 +39,7 @@ const AboutAcardion = () => {
 
             <div className='acardion-div'>
                 <div class="accordion" onClick={ac} >
-                    <VscTools className='acardion-icon' />
+                    <VscTools className='about-acardion-icon' />
                     <h1>Unudulmaz Təcrübə</h1>
                     </div>
                   <div class="panel"> 
@@ -48,7 +48,7 @@ const AboutAcardion = () => {
             </div>
             <div className='acardion-div'>
                 <div class="accordion" onClick={ac}>
-                    <BsBricks className='acardion-icon'/>
+                    <BsBricks className='about-acardion-icon'/>
                   <h1>Keyfiyyətə Nəzarət Sistemi</h1>
                     </div>
                      <div class="panel">
@@ -57,7 +57,7 @@ const AboutAcardion = () => {
             </div>
             <div className='acardion-div'>
                 <div class="accordion" onClick={ac}>
-                    <IoIosPeople className='acardion-icon'/>
+                    <IoIosPeople className='about-acardion-icon'/>
                     <h1>Peşəkar və İxtisaslı</h1>
                     </div>
                      <div class="panel">

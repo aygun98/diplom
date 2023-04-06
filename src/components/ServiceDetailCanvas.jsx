@@ -13,7 +13,7 @@ const ServiceDetailCanvas = () => {
             <h6>Xidmətə Baxış</h6>
             <h1>Gözlədiyiniz Keyfiyyət, Layiq Olduğunuz Xidmət!</h1>
             <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. Torpağın yurdu kimi, mərsiyə də, torpağın onbaşı, aslanın yastığı.</p>
-       <Link to='elaqe'><Button klass='service-detail-canvas-btn' daxiliYazi='Əlaqədə olmaq'/></Link>
+       <Link to='/elaqe'><Button klass='service-detail-canvas-btn' daxiliYazi='Əlaqədə olmaq'/></Link>
         </div>
         <div className="service-detail-canvas-right">
             <div className="service-detail-canvas-right-faiz">
