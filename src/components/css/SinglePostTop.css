@@ -1,0 +1,105 @@
+.single-post{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+   
+}
+
+
+.single-post-top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 50px;
+}
+
+.single-post-top-img{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/bearded-handyman-lying-on-floor-near-toolbox-in-ba-resize-pyp0udbmwv6biilodl4bfi65393yp66dd9yrt9wxag.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 930px;
+   height: 465px;
+   position: relative;
+
+}
+.single-post-top-img-box{
+    background-color: #2b1a66;
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+}
+.single-post-top-img-box h1{
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    
+}
+
+.single-post-top p, .single-post-top i{
+font-size: 15px;
+color: #626262;
+text-align: justify;
+}
+.single-post-top-padding{
+padding-top: 50px;
+}
+.single-post-top-italic{
+    display: flex;
+    gap: 30px;
+    
+}
+.single-post-top-italic>span{
+    display: flex;
+    
+}
+.single-post-top-icon{
+    font-size: 70px;
+    margin-right: -20px;
+    color: #2b98e6;
+}
+
+/* media */
+@media (max-width:1255px) {
+    .single-post{ 
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    .single-post{ 
+        padding: 100px 20px;
+    }
+}
+@media (max-width:991px) {
+    .single-post{ 
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .single-post{ 
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1075px) {
+    .single-post-top{
+        padding: 0;
+    }
+}
+@media (max-width:992px) {
+    .single-post-top-img{
+       width: 100%;
+       height: 300px;
+    }
+    .single-post-top-img-box h1{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+@media (max-width:678px) {
+    .single-post-top-img{
+       width: 100%;
+       height: 200px;
+    }
+   
+}

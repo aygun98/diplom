@@ -80,7 +80,7 @@ const HomeReyler = () => {
              <RiNumber9 className='home-reyler-right-nomre-icon home-reyler-right-nomre-icon-margin '/>
              <RiNumber9 className='home-reyler-right-nomre-icon'/>
              </div>
-        <div className='home-reyler-right-img'></div>
+        <div data-aos="fade-up"  data-aos-delay="600"  data-aos-duration="700" className='home-reyler-right-img'></div>
 
     </div>
   </div>
