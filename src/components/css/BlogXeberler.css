@@ -1,0 +1,257 @@
+.blog-xeberler {
+    display: flex;
+    padding: 100px;
+    align-items: baseline;
+    gap: 50px;
+   width: 100%;
+
+}
+
+
+
+.blog-xeberler-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 70%;
+    
+}
+
+.blog-xeberler-left-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+
+
+
+.blog-xeberler-left-img {
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 10% ;
+    background-position-y: 10% ;
+    background-size: cover;
+    
+    width: 100%;
+    height: 559px;
+    transition: all .4s ease;
+    
+}
+.blog-xeberler-left-img1{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/serious-male-plumber-in-working-overall-fixing-sin-resize.jpg);
+
+}
+.blog-xeberler-left-img2{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/we-can-help-you-male-builder-wearing-tool-belt-ca-resize.jpg);
+
+}
+.blog-xeberler-left-img3{
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/professional-repairman-fixing-air-conditioner-hang-resize.jpg);
+
+}
+.blog-xeberler-left-img:hover{
+    transform: scale(0.9) rotate(2deg);
+    opacity: .8;
+    
+}
+.blog-xeberler-left-img-span{
+    background-color: #2b98e6;
+    color: #fff !important;
+    width: max-content;
+    /* margin: 15px; */
+    padding: 15px 20px;
+    text-align: center;
+}
+.blog-xeberler-left-cards h1 {
+    font-size: 25px;
+    font-weight: 800;
+
+}
+.blog-xeberler-left-cards span{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.blog-xeberler-left-cards span, .blog-xeberler-left-cards p {
+    font-size: 15px;
+    color: #626262;
+}
+.blog-xeberler-left-cards a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+}
+.blog-xeberler-left-cards-span{
+padding-right: 30px;
+}
+.blog-xeberler-left-icon{
+    font-size: 17px;
+}
+
+/*  */
+.blog-xeberler-right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 25px;
+}
+.blog-xeberler-right-cards{
+    display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+.blog-xeberler-right-card{
+    display: flex;
+    gap: 20px;
+}
+.blog-xeberler-right-card-img{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    transition: all .4s ease;
+}
+.blog-xeberler-right-card-img:hover{
+    transform: scale(0.9) rotate(2deg);
+    opacity: .8;
+    
+}
+.blog-xeberler-right-span > h1{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+}
+.blog-xeberler-right p{
+    margin: 0;
+    font-size: 15px;
+   
+    color: #626262;
+}
+.blog-xeberler-right-span{
+    background-color: #2b1a66;
+ width: 100%;
+ padding: 16px;
+}
+.blog-xeberler-right-card-text{
+    display: flex;
+    flex-direction: column;
+}
+.blog-xeberler-right-card-text h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blog-xeberler-right-card-text p{
+    font-size: 14px;
+}
+
+/*  */
+.blog-xeberler-right-bottom{
+    margin-top: 40px;
+    padding:100px 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+    background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/builder-portrait-near-the-door-resize.jpg);
+}
+.blog-xeberler-right-bottom::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+    /* background-color: black; */
+    background-image: linear-gradient(180deg, #2b1a66 40%, #2B1A66C4 100%);
+    /* opacity: 0.95; */
+    /* z-index: 0; */
+}
+.blog-xeberler-right-bottom h1{
+    text-align: center;
+   font-size: 42px;
+   color:#fff;
+   font-weight: 800;
+   z-index: 1;
+}
+.blog-xeberler-right-bottom h6{
+    text-align: center;
+   font-size: 20px;
+   color:#2b98e6;
+   font-weight: 700;
+   z-index: 1;
+}
+.blog-xeberler-right-bottom p{
+    text-align: center;
+   font-size: 15px;
+   color:#ffffff;
+   font-weight: 500;
+   z-index: 1;
+}
+.blog-xeberler-right-bottom a{
+    text-align: center;
+
+   z-index: 1;
+}
+.blog-xeberler-right-bottom-btn{
+    width: 250px;
+    padding: 20px 0;
+   
+}
+
+/* media */
+@media (max-width:1255px) {
+    .blog-xeberler {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:1135px) {
+    .blog-xeberler {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .blog-xeberler {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .blog-xeberler {
+        padding: 100px 30px;
+    }
+    .blog-xeberler-left-img{
+        height: 400px;
+    }
+}
+@media (max-width:556px) {
+   
+    .blog-xeberler-left-img{
+        height: 300px;
+    }
+}
+@media (max-width:1060px) {
+    .blog-xeberler {
+     flex-direction: column;
+    }
+    .blog-xeberler-left, .blog-xeberler-right{
+        width: 100%;
+    }
+}
+@media (max-width:596px) {
+    .blog-xeberler-left-cards span{
+        flex-direction: column;
+    }
+}
