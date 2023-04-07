@@ -7,10 +7,12 @@ import ContactMap from './ContactMap'
 const Contact = () => {
   return (
     <>
+    <span className='contact'>
     <CompleHeaders h6='Əlaqə' h1='Bizimlə əlaqə saxlayın'/>
       <ContactForm/>
       <ContactElaqe/>
       <ContactMap/>
+    </span>
     </>
   )
 }

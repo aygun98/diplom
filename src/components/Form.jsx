@@ -1,5 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import FormModalQutu from './FormModalQutu';
+
 import './css/Form.css'
 
 const Form = () => {
@@ -17,6 +19,10 @@ const Form = () => {
             
             form.current.reset()
     };
+
+
+    // modal
+    const [openModalForm, setOpenModalForm ] = useState(false)
     return (
         <>
             <form ref={form} onSubmit={sendEmail}>
@@ -44,8 +50,10 @@ const Form = () => {
                 <textarea name="message" />
 
 
-                <input type="submit" value="Mesajı Göndər" />
+                <input type="submit" value="Mesajı Göndər" onClick={()=>{ setOpenModalForm(true)}} />
             </form>
+            {/* <FormModalQutu/> */}
+            {openModalForm && < FormModalQutu closeModalForm={setOpenModalForm}/>}
         </>
     )
 }
