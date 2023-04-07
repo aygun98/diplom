@@ -123,7 +123,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
             </div>
 
 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/"></Link>
 

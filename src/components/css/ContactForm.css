@@ -1,0 +1,73 @@
+.contact-form-container{
+    display: flex;padding: 100px;
+    gap: 20px;
+  
+}
+
+
+
+.contact-form-left{
+background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/2022/12/handsome-happy-workman-in-hard-hat-and-tool-belt-s-resize-1.jpg);
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+width: 50%;
+/* height: 400px; */
+}
+
+.contact-form-right-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form-right-text h6{
+  color: #2b98e6;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-form-right-text h1{
+  
+  font-size: 42px;
+  font-weight: 800;
+}
+.contact-form-right-text p{
+  color: #626262;
+  font-size: 15px;
+  /* font-weight: 700; */
+}
+/* media */
+@media (max-width:1255px) {
+    .contact-form-container{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    .contact-form-container{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:991px) {
+    .contact-form-container{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .contact-form-container{
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1044px) {
+    .contact-form-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-form-left{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media (max-width:700px) {
+    .contact-form-right-text h1{
+         font-size: 37px;
+    }
+}
