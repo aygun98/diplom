@@ -42,11 +42,11 @@
     gap: 15px;
 }
 
-.acardion-div {
+.about-acardion-div {
     width: 350px;
 }
 
-.accordion {
+.about-accordion {
     /* background-color: #eee; */
     /* color: #444; */
     display: flex;
@@ -64,8 +64,10 @@
     transition: 0.4s;
 }
 
-.accordion:hover {
+.about-accordion:hover {
     border: 1px solid #2b98e6;
+    background-color: #2b1a66;
+    color: #fff;
 }
 
 .active {
@@ -76,7 +78,7 @@
 .panel {
     padding: 18px;
     text-align: center;
-    display: none;
+    /* display: none; */
     background-color: white;
     overflow: hidden;
     width: 100%;
@@ -93,7 +95,7 @@
     color: #2b98e6;
 }
 
-.accordion h1 {
+.about-accordion h1 {
     font-size: 25px;
     text-align: center;
     font-weight: 700;

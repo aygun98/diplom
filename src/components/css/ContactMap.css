@@ -1,0 +1,27 @@
+.contact-map{
+    padding: 100px;
+    width: 100%;
+}
+@media (max-width:1255px) {
+    .contact-map{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    .contact-map{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:991px) {
+    .contact-map{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    .contact-map{
+        padding: 100px 30px;
+    }
+}
+.contact-map > iframe{
+    width: 100%;
+}

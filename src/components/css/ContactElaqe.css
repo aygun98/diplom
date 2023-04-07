@@ -1,0 +1,82 @@
+.contact-elaqe{
+    display: flex;
+    width: 100%;
+    padding: 100px;
+    justify-content: space-around;
+
+}
+
+.contact-accordion-item{
+border: 1px solid rgba(0, 0, 0, 0.158);
+width: 300px;
+height: max-content;
+cursor: pointer;
+
+}
+.contact-accordion-item:hover{
+    background-color: #2b1a66;
+    color: #fff ;
+}
+.contact-accordion-item:hover p{
+   
+    color: #fff ;
+}
+.contact-accordion-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-accordion-title h1{
+ font-size: 70px;
+ color: #2b98e6;
+ 
+}
+.contact-accordion-content h6{
+   font-size: 20px;
+text-align: center;
+font-weight: 600;
+}
+.contact-accordion-content p{
+   font-size: 15px;
+text-align: center;
+color: #626262;
+font-weight: 600;
+}
+/* media */
+
+@media (max-width:1255px) {
+    
+    .contact-elaqe{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:1135px) {
+    
+    .contact-elaqe{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:991px) {
+    
+    .contact-elaqe{
+        padding: 100px 50px;
+    }
+}
+@media (max-width:800px) {
+    
+    .contact-elaqe{
+        padding: 100px 30px;
+    }
+}
+@media (max-width:1000px) {
+    
+    .contact-elaqe{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contact-accordion-item{
+        width: 100%;
+    }
+}
+

@@ -1,36 +1,49 @@
 
 import React, { useState } from 'react';
 import './css/ContactElaqe.css'
+import {HiOutlineMapPin} from 'react-icons/hi2'
+import {FiPhoneCall} from 'react-icons/fi'
+import {HiOutlineMailOpen} from 'react-icons/hi'
 
 const ContactElaqe = () => {
 
-    const [isActive1, setIsActive1] = useState(false);
-    const [isActive2, setIsActive2] = useState(false);
-    const [isActive3, setIsActive3] = useState(false);
+    const [ElaqeActive1, setElaqeActive1] = useState(false);
+    const [ElaqeActive2, setElaqeActive2] = useState(false);
+    const [ElaqeActive3, setElaqeActive3] = useState(false);
     return (
         <>
-            <div className="contact-accordion-item">
-                <div className="contact-accordion-title" onClick={() => setIsActive1(!isActive1)}>
-                    <h1>
-                        Hansı xidmət növlərini təqdim edirsiniz?</h1>
+            <div className='contact-elaqe'>
+                <div className="contact-accordion-item">
+                    <div className="contact-accordion-title" onClick={() => setElaqeActive1(!ElaqeActive1)}>
+                        <h1><HiOutlineMapPin/></h1>
 
+                    </div>
+                    {ElaqeActive1 && <div className="contact-accordion-content">
+                        <h6>Ofis yeri</h6>
+                        <p>99 Broklyn New Street, ABŞ</p>
+                        </div>}
                 </div>
-                {isActive1 && <p className="contact-accordion-content">Çox uzaqlarda, söz dağlarının arxasında, Vokalia və Consonantia ölkələrindən uzaqlarda, kor mətnlər yaşayır. Ayrılaraq sahildəki Bookmarksgrove-da yaşayırlar</p>}
-            </div>
-            <div className="contact--item">
-                <div className="contact-accordion-title" onClick={() => setIsActive2(!isActive2)}>
-                    <h1>Qaydalarınız və şərtləriniz nədir?</h1>
-                   
-                </div>
-                {isActive2 && <p className="contact-accordion-content">Çox uzaqlarda, söz dağlarının arxasında, Vokalia və Consonantia ölkələrindən uzaqlarda, kor mətnlər yaşayır. Ayrılaraq sahildəki Bookmarksgrove-da yaşayırlar</p>}
-            </div>
-            <div className="contact-accordion-item">
-                <div className="contact-accordion-title" onClick={() => setIsActive3(!isActive3)}>
-                    <h1>Layihəni başa çatdırmaq nə qədər vaxt aparacaq?</h1>
-                    
+                <div className="contact-accordion-item">
+                    <div className="contact-accordion-title" onClick={() => setElaqeActive2(!ElaqeActive2)}>
+                        <h1><FiPhoneCall/></h1>
 
+                    </div>
+                    {ElaqeActive2 && <div className="contact-accordion-content">
+                        <h6>Telefon nömrəsi</h6>
+                        <p>+123 456 789</p>
+                      </div>}
                 </div>
-                {isActive3 && <p className="contact-accordion-content">Çox uzaqlarda, söz dağlarının arxasında, Vokalia və Consonantia ölkələrindən uzaqlarda, kor mətnlər yaşayır. Ayrılaraq sahildəki Bookmarksgrove-da yaşayırlar</p>}
+                <div className="contact-accordion-item">
+                    <div className="contact-accordion-title" onClick={() => setElaqeActive3(!ElaqeActive3)}>
+                        <h1><HiOutlineMailOpen/></h1>
+
+
+                    </div>
+                    {ElaqeActive3 && <div className="contact-accordion-content">
+                        <h6>E-poçt ünvanı</h6>
+                        <p>info@fixano.com</p>
+                        </div>}
+                </div>
             </div>
         </>
     )

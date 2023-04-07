@@ -39,10 +39,11 @@ input[type="submit"]{
     font-weight: 700;
     margin-top: 10px;
 }
-input:focus{
+input:focus, textarea:focus{
     box-shadow: 0 0 9px #2b98e659;
     border-color: #2b98e6;
 }
+
 
 @media (max-width:500px) {
      form> div{
