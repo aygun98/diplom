@@ -15,6 +15,7 @@ import Blog from './components/Blog';
 import SinglePost from './components/SinglePost'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NotPageFound from "./components/NotPageFound";
 
 //
 import AOS from 'aos';
@@ -40,6 +41,7 @@ function App() {
           <Route path="bloq" element={<Blog />} />
           <Route path="ferqlerimiz" element={<SinglePost />} />
           <Route path="elaqe" element={<Contact />} />
+          <Route path="*" element={<NotPageFound />} />
 
         </Routes>
       <Footer/>
