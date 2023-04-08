@@ -69,27 +69,7 @@ useEffect(() => {
 
     )
     }
-      {/* <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="haqqimizda" element={<About />} />
-          <Route path="xidmetler" element={<Services/>} />
-          <Route path="xidmet tefferuati" element={<ServiceDetail/>} />
-          <Route path="qiymet" element={<Pricing/>} />
-          <Route path="bloq" element={<Blog />} />
-          <Route path="ferqlerimiz" element={<SinglePost />} />
-          <Route path="elaqe" element={<Contact />} />
-          <Route path="*" element={<NotPageFound />} />
-
-        </Routes>
-      <Footer/>
-
-
-
-
-
-      </BrowserRouter> */}
+    
 
 
 
