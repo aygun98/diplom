@@ -7,7 +7,7 @@ const NotPageFound = () => {
         <div className="not-page-img"></div>
         <div className="not-page-text">
             <h1>404 error</h1>
-            <h2>Bu Səyfə Tapılmadı!</h2>
+            <h2>Bu Səhifə Tapılmadı!</h2>
             </div>
     </div>
   )

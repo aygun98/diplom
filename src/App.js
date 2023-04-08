@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,10 +19,22 @@ import NotPageFound from "./components/NotPageFound";
 
 //
 import AOS from 'aos';
+import Loading from "./components/Loading";
 
 
 function App() {
+// loading 
+const [loading, setLoading] = useState(false)
+useEffect(() => {
+  setLoading(true);
+  setTimeout(() =>{
+    setLoading(false);
+  }, 7000);
+  }, [])
 
+
+
+//aos
   useEffect(() => {
     AOS.init({
       duration: 2000
@@ -30,7 +42,34 @@ function App() {
   }, []);
   return (
     <>
+    {
+    loading ?  (<Loading/> ) : (
       <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="haqqimizda" element={<About />} />
+        <Route path="xidmetler" element={<Services/>} />
+        <Route path="xidmet tefferuati" element={<ServiceDetail/>} />
+        <Route path="qiymet" element={<Pricing/>} />
+        <Route path="bloq" element={<Blog />} />
+        <Route path="ferqlerimiz" element={<SinglePost />} />
+        <Route path="elaqe" element={<Contact />} />
+        <Route path="*" element={<NotPageFound />} />
+
+      </Routes>
+    <Footer/>
+
+
+
+
+
+    </BrowserRouter>
+
+
+    )
+    }
+      {/* <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,7 +89,7 @@ function App() {
 
 
 
-      </BrowserRouter>
+      </BrowserRouter> */}
 
 
 
