@@ -27,26 +27,37 @@ const Searchbtn = ({placeholders, datalar}) => {
    }
    //
  const inputs = useRef()
+ const inputsactiv = useRef()
  const inputActiv = (e)=>{
     const klikle = e.target
     if(klikle.classList.contains('search-icon')){
    inputs.current.classList.toggle('searchInputs-activ')
+   inputsactiv.current.classList.toggle('search-input-aktiv')
     }
  }
+// databagla
+// const datamiz = useRef()
+// const datacross = useRef()
+// const dataBagla =() =>{
+ 
+//   datamiz.current.classList.add('data-bagla')
+//   inputsactiv.current.value=''
+
+// }
 
 
  return (
     <div className='search'>
         <div className='searchInputs' ref={inputs}>
-            <input type="text" placeholder={placeholders} value={wordEntered} onChange={handleFilter} />
+            <input type="text" placeholder={placeholders} value={wordEntered} onChange={handleFilter} ref={inputsactiv}/>
             <div className="searchIcon">
-                {filteredData.length === 0 ? <BiSearchAlt onClick={inputActiv} className='search-icon'/> : <RxCross2 className='clearBtn' id='clearBtn' onClick={clearInput}/>}</div>
+                {filteredData.length === 0? <BiSearchAlt onClick={inputActiv} className='search-icon'/> : <RxCross2  className='clearBtn' id='clearBtn' onClick={clearInput}/>}</div>
         </div>
         {filteredData.length != 0 && 
-        <div className='dataResult'>
+        <div className='dataResult' >
             {
                 filteredData.slice(0, 15).map((value, key) =>{
-                    return  <Link  to={value.to} className="dataItem"> 
+                    return  <Link  to={value.to} className="dataItem" > 
                    <p> {value.write}</p>
                     </Link>
                 })

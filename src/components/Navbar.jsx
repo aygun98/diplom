@@ -21,7 +21,7 @@ const Navbar = () => {
 window.addEventListener('scroll', navaScrollVer)
 
 function navaScrollVer() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector('.navbar').classList.add('sticky-padding')
   }
   else {
@@ -164,7 +164,7 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
 
                         </ul>
                         {/* <Button klass='navbar-button' daxiliYazi='Görüş təyin etmək' daxiliIcon={<IoMdArrowForward className='navbar-button-icon'/>} /> */}
-                       <Searchbtn placeholders="axtar" datalar={Data}/>
+                       <Searchbtn placeholders="Axtar..." datalar={Data}/>
                        
                     </div>
                 </div>

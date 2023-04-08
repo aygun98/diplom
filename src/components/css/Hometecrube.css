@@ -8,6 +8,7 @@
     width: 50%;
     height: 608px;
     /* background-color: #2B98E6; */
+    
 }
 .tecrube-img-top {
     background-image: url(https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/young-repairman-in-protective-workwear-moving-refr-resize-pza1ig578z9jdh8ssp0s4a3mridra6w3urclfwnzvo.jpg);
@@ -17,7 +18,11 @@
     width: 80%;
     margin: 0 auto;
     height: 60%;
+    
+}
+.tecrube-img-top:hover,.tecrube-img-bottom-left:hover,.tecrube-img-bottom-right:hover{
 
+    animation: sake 2s;
 }
 
 .tecrube-img-bottom{
@@ -107,6 +112,19 @@ font-weight: 600;
     color: #fff;
 }
 
+@keyframes sake {
+    0% { transform: translate(1px, 1px) rotate(0deg);  }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 /* media */
 @media (max-width:1346px) {

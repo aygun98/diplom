@@ -9,6 +9,7 @@
 
 .sticky-padding{
     padding: 10px 70px;
+    transition: 1s;
 }
 
 .navbar-brand{
@@ -41,7 +42,10 @@
 .navbar-fabars-icon:hover{
     background-color: #2B1A66;
 }
-
+.nav-link:focus{
+    color: #2b98e6 !important;
+    transform: translateY(5px);
+}
 
 
 
@@ -59,56 +63,50 @@
 .nav-link:hover{
     color: #2B1A66;
 }
-/* button */
-.navbar-button{
-    width: 232px;
-    height: 57px;
-    background-color: #2b98e6;
-    font-size: 16px;
-    border: none;
-    color: #fff;
-    font-weight: 700;
-}
 
-.navbar-button-icon{
-    font-size: 20px;
-    margin-left: 5px;
-}
+
+
 /* dropmenu */
+.sehife-drop, .blog-drop{
+    list-style-type: none;
+   padding: 0px 0px;
+   width: 220px;
+
+   height: max-content
+  
+}
 .dropdownmenu{
-    position: relative;
-    display: none;
     background-color: #ffffffe0;
     border: 1px solid #dedede;
     box-shadow: 0 0 5px rgba(45,45,45,.2);
-    /* transform: translateY(-10px); */
     
 }
 
 
+.sehife, .blog{
+    position: relative;
+    
+}
 
 
-.sehife:hover .sehife-drop{
+.sehife-drop, .blog-drop{
     position: absolute;
     z-index: 999;
-    display: flex;
-    flex-direction: column;
-    /* transform: translateY(10px);
-    transition: 1s; */
+   
+    display: none;
   
    
 }
-
-.blog:hover .blog-drop{
-    position: absolute;
-    z-index: 999;
+.sehife:hover .sehife-drop, .blog:hover .blog-drop{
     display: flex;
     flex-direction: column;
-    
+   
+   
 }
+ 
 
 
-
+/*  */
 .sehife:hover .iodropicon{
   transform: rotate(-180deg);
   transition: 1s;
@@ -119,23 +117,17 @@
 }
 .dropdownItem{
     text-decoration: none;
-    color: #000000c4;
+  
     padding: 15px 5px;
     font-weight: 500;
-    color: #000000bb;
+    color: #000000f3;
 }
 .dropdownItem:hover{
     background-color: #2B1A66;
     color: #fff;
    
 }
-.sehife-drop, .blog-drop{
-    list-style-type: none;
-   padding: 0px 0px;
-   width: 220px;
-   height: max-content
-  
-}
+
 
 
 
