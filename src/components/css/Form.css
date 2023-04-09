@@ -15,7 +15,7 @@ label{
     font-weight: 700;
     padding-bottom:10px;
 }
-input, .form-button-elaqe{
+form input, .form-button-elaqe{
     width: 100% !important;
     padding: 8px;
     outline: none;
@@ -54,7 +54,7 @@ input:focus, textarea:focus, .form-button-elaqe{
         flex-direction: column;
         align-items: center;
      }
-     form span{
+     form div span{
         width: 100%;
      }
 }

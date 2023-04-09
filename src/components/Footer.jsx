@@ -76,7 +76,7 @@ const Footer = () => {
           <p>E-poçt vasitəsilə ən son yeniləmələri əldə edin. Bunu qaçırmayın. İstənilən vaxt abunəlikdən çıxa bilərsiniz.</p>
           <form action="" className='footer-center-right-form' ref={form} onSubmit={sendEmail}>
             <input type="mail" name="email"  placeholder='E-poçtunuz...' />
-            <button ><span>İndi Abunə Olun </span></button>
+            <button className='footer-bottom-form-btn'><span>İndi Abunə Olun </span></button>
           </form>
         </div>
       

@@ -19,23 +19,6 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-//navbar scroll sticky
-const NavBarUnvani = useRef()
-const listenScrollEvent = () => {
-    if (window.scrollY >= 60) {
-        NavBarUnvani.current.classList.add("sticky-padding");
-    } else if (window.scrollY <= 60) {
-       NavBarUnvani.current.classList.remove("sticky-padding");
-    }
-};
-
-
-useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    return () => {
-        window.removeEventListener("scroll", listenScrollEvent);
-    }
-}, []);
 
 // overlay
 const overlayElement = useRef()
@@ -85,6 +68,26 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
 
 
 
+
+
+
+//navbar scroll sticky
+useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+        window.removeEventListener("scroll", listenScrollEvent);
+    }
+}, []);
+
+
+const NavBarUnvani = useRef()
+const listenScrollEvent = () => {
+    if (window.scrollY >= 60) {
+        NavBarUnvani.current.classList.add("sticky-padding");
+    } else if (window.scrollY <= 60) {
+       NavBarUnvani.current.classList.remove("sticky-padding");
+    }
+};
 
 
 
