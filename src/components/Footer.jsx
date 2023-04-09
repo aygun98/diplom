@@ -30,17 +30,17 @@ const Footer = () => {
     };
   return (
     <>
-     <div className="footer-top">
-        <div className="footer-top-left">
+     <div className="footer-top"  data-aos="fade-up"  data-aos-delay="300" data-aos-duration="600">
+        <div className="footer-top-left" data-aos="fade-right"  data-aos-delay="500">
           <h6 >Təcili Yardım lazımdır</h6>
           <h1 >24 Saat Təcili Xidmətlərə hər zaman zəng edin!</h1>
           <div className="footer-top-left-elaqe">
          <a href='tel:'> <Button klass="footer-top-left-btn" daxiliYazi="Xidmət tələb edin"/></a>
-         <span> <FiPhoneCall className='footer-phone-icon' /> +123 456 789</span>
+         <span className='footer-top-left-elaqe-span'> <FiPhoneCall className='footer-phone-icon' /> +123 456 789</span>
           </div>
         </div>
         <div className="footer-top-right">
-        <div div className="footer-top-right-img"></div>
+        <div div className="footer-top-right-img" data-aos="fade-left"   data-aos-delay="500"></div>
         </div>
       </div>
     <div className='footer-container'>
@@ -76,7 +76,7 @@ const Footer = () => {
           <p>E-poçt vasitəsilə ən son yeniləmələri əldə edin. Bunu qaçırmayın. İstənilən vaxt abunəlikdən çıxa bilərsiniz.</p>
           <form action="" className='footer-center-right-form' ref={form} onSubmit={sendEmail}>
             <input type="mail" name="email"  placeholder='E-poçtunuz...' />
-            <button >İndi Abunə Olun</button>
+            <button ><span>İndi Abunə Olun </span></button>
           </form>
         </div>
       

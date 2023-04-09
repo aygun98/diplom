@@ -4,7 +4,9 @@ import './css/Button.css'
 
 const Button = ({klass, daxiliYazi, daxiliIcon}) => {
   return (
-    <button className={klass}> {daxiliYazi} {daxiliIcon && daxiliIcon}</button>
+    <>
+    <button className={klass}> <span>{daxiliYazi} {daxiliIcon && daxiliIcon} </span> </button>
+    </>
   )
 }
 

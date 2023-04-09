@@ -9,7 +9,7 @@
 
 .sticky-padding{
     padding: 10px 70px;
-    transition: 1s;
+    transition:padding 2s;
 }
 
 .navbar-brand{

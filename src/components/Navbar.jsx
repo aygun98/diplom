@@ -22,9 +22,9 @@ const Navbar = () => {
 //navbar scroll sticky
 const NavBarUnvani = useRef()
 const listenScrollEvent = () => {
-    if (window.scrollY >= 70) {
+    if (window.scrollY >= 60) {
         NavBarUnvani.current.classList.add("sticky-padding");
-    } else if (window.scrollY <= 70) {
+    } else if (window.scrollY <= 60) {
        NavBarUnvani.current.classList.remove("sticky-padding");
     }
 };

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import FormModalQutu from './FormModalQutu';
+import Button from './Button';
 
 import './css/Form.css'
 
@@ -50,7 +51,7 @@ const Form = () => {
                 <textarea name="message" />
 
 
-                <input type="submit" value="Mesajı Göndər" onClick={()=>{ setOpenModalForm(true)}} />
+                <Button klass='form-button-elaqe' type="submit" daxiliYazi="Mesajı Göndər" onClick={()=>{ setOpenModalForm(true)}} />
             </form>
             {/* <FormModalQutu/> */}
             {openModalForm && < FormModalQutu closeModalForm={setOpenModalForm}/>}
