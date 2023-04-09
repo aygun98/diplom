@@ -44,7 +44,7 @@ const HomeSponsorlar = () => {
        
        
             {HomeSponsorlarJson.map(melumat=>(
-           <SwiperSlide className='home-swiper-img-background'> <div className='home-swiper-img-container'><img  src={melumat.sekil} alt="sekil" /></div></SwiperSlide>
+           <SwiperSlide key={melumat.id}  className='home-swiper-img-background'> <div className='home-swiper-img-container'><img   src={melumat.sekil} alt="sekil" /></div></SwiperSlide>
         ))}
     
         

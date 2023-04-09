@@ -1,13 +1,16 @@
 [
     {
+        "id":1,
         "img": "https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/selective-focus-of-handsome-handyman-touching-helm-resize-pza12oem5c3rlai58380bnli30wwgfudvuvwagctqg.jpg",
         "h1":"Təmir xidməti"
     },
     {
+        "id":2,
         "img": "https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/side-view-of-handsome-bearded-electrician-repairin-resize-pyzlpgdjenir7l7pyfa5n64n33vby8a9nm3f6ejonc.jpg",
         "h1":"Elektrik xidməti"
     },
     {
+        "id":3,
         "img": "https://templatekit.kotakkuning.com/fixano/wp-content/uploads/sites/10/elementor/thumbs/bearded-handyman-lying-on-floor-near-toolbox-in-ba-resize-pyp0udbi1g2uwvbw28dh3m4qha295p8881lfbi3xc8.jpg",
         "h1":"Santexnika xidməti"
     }

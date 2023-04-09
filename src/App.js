@@ -23,18 +23,18 @@ import Loading from "./components/Loading";
 
 
 function App() {
-// loading 
-const [loading, setLoading] = useState(false)
-useEffect(() => {
-  setLoading(true);
-  setTimeout(() =>{
-    setLoading(false);
-  }, 7000);
+  // loading 
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
   }, [])
 
 
 
-//aos
+  //aos
   useEffect(() => {
     AOS.init({
       duration: 2000
@@ -42,34 +42,29 @@ useEffect(() => {
   }, []);
   return (
     <>
-    {
-    loading ?  (<Loading/> ) : (
-      <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="haqqimizda" element={<About />} />
-        <Route path="xidmetler" element={<Services/>} />
-        <Route path="xidmet tefferuati" element={<ServiceDetail/>} />
-        <Route path="qiymet" element={<Pricing/>} />
-        <Route path="bloq" element={<Blog />} />
-        <Route path="ferqlerimiz" element={<SinglePost />} />
-        <Route path="elaqe" element={<Contact />} />
-        <Route path="*" element={<NotPageFound />} />
+      {
+        loading ? (<Loading />) : (
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="haqqimizda" element={<About />} />
+              <Route path="xidmetler" element={<Services />} />
+              <Route path="xidmet tefferuati" element={<ServiceDetail />} />
+              <Route path="qiymet" element={<Pricing />} />
+              <Route path="bloq" element={<Blog />} />
+              <Route path="ferqlerimiz" element={<SinglePost />} />
+              <Route path="elaqe" element={<Contact />} />
+              <Route path="*" element={<NotPageFound />} />
 
-      </Routes>
-    <Footer/>
-
-
-
+            </Routes>
+            <Footer />
+          </BrowserRouter>
 
 
-    </BrowserRouter>
+        )
+      }
 
-
-    )
-    }
-    
 
 
 

@@ -15,16 +15,16 @@ const Homexidmet = () => {
     </div>
     <div className=' home-xidmet-card-container'>
       <div className='home-xidmet-card-container-top'>
-        {HomexidmetJson.map(melumats=>(
+        {HomexidmetJson.map(melumatlar1=>(
 
-              <HomexidmetCard sekil={melumats.img} h1={melumats.h1}/>
+              <HomexidmetCard key={melumatlar1.id} sekil={melumatlar1.img} h1={melumatlar1.h1}/>
         ))}
 
       </div>
       <div className='home-xidmet-card-container-bottom'>
       {HomexidmetJson2.map(melumatlar=>(
 
-           <HomexidmetCard sekil={melumatlar.img} h1={melumatlar.h1}/>
+           <HomexidmetCard key={melumatlar.id} sekil={melumatlar.img} h1={melumatlar.h1}/>
           ))}
       </div>
 

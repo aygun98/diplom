@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useRef}from 'react'
 import './css/Footer.css'
 import Button from './Button'
 import { FiPhoneCall } from 'react-icons/fi'
@@ -8,8 +8,26 @@ import { AiFillYoutube } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+//mail
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+
+  //mail
+  const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_tdljwia', 'template_o1rj2rt', form.current, 'b8zLQ2-MXxCE83kPS')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            
+            form.current.reset()
+    };
   return (
     <>
      <div className="footer-top">
@@ -18,8 +36,7 @@ const Footer = () => {
           <h1 >24 Saat Təcili Xidmətlərə hər zaman zəng edin!</h1>
           <div className="footer-top-left-elaqe">
          <a href='tel:'> <Button klass="footer-top-left-btn" daxiliYazi="Xidmət tələb edin"/></a>
-         <span> <FiPhoneCall className='footer-phone-icon' /> 
-+123 456 789</span>
+         <span> <FiPhoneCall className='footer-phone-icon' /> +123 456 789</span>
           </div>
         </div>
         <div className="footer-top-right">
@@ -57,9 +74,9 @@ const Footer = () => {
         <div className="footer-center-right">
           <h4>Xəbər bülleteni</h4>
           <p>E-poçt vasitəsilə ən son yeniləmələri əldə edin. Bunu qaçırmayın. İstənilən vaxt abunəlikdən çıxa bilərsiniz.</p>
-          <form action="" className='footer-center-right-form'>
-            <input type="mail" placeholder='E-poçtunuz...' />
-            <button>İndi Abunə Olun</button>
+          <form action="" className='footer-center-right-form' ref={form} onSubmit={sendEmail}>
+            <input type="mail" name="email"  placeholder='E-poçtunuz...' />
+            <button >İndi Abunə Olun</button>
           </form>
         </div>
       

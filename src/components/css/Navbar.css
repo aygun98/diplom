@@ -171,7 +171,15 @@ width: 340px;
     padding: 10px;
     padding-left: 15px;
 }
+.overlay li a{
+    font-size: 17px;
 
+}
+.overlay li a:focus{
+    color: #2b98e6;
+   
+    transition:color 1s;
+}
 
 .overlay-dropdownMenu{
     display: none;

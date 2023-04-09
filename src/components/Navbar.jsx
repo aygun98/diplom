@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import Data from '../data.json'
 import './css/Navbar.css'
 import Searchbtn from './Searchbtn'
@@ -14,21 +14,28 @@ import { IoIosArrowDown} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 //moadlform
 // import NavModulForm from './NavModulForm'
+// searcbtn
+
 
 const Navbar = () => {
 
-//navbar scroll fixed
-window.addEventListener('scroll', navaScrollVer)
+//navbar scroll sticky
+const NavBarUnvani = useRef()
+const listenScrollEvent = () => {
+    if (window.scrollY >= 70) {
+        NavBarUnvani.current.classList.add("sticky-padding");
+    } else if (window.scrollY <= 70) {
+       NavBarUnvani.current.classList.remove("sticky-padding");
+    }
+};
 
-function navaScrollVer() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector('.navbar').classList.add('sticky-padding')
-  }
-  else {
-    document.querySelector('.navbar').classList.remove('sticky-padding')
-  }
 
-}
+useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+        window.removeEventListener("scroll", listenScrollEvent);
+    }
+}, []);
 
 // overlay
 const overlayElement = useRef()
@@ -89,15 +96,15 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
         <div className='overlay-arxa'  ref={overlayUnvanarxa} > 
             <div className='overlay' ref={overlayElement}>
             <span className='overlay-span-cross-icon' ><RxCross2 className='overlay-cross-icon'  onClick={closeOverlay} /></span>
-                <li>
-                    <Link to="/" className="overlay-nav-link">Ana səhifə</Link>
+                <li  >
+                    <Link to="/" className="overlay-nav-link" >Ana səhifə</Link>
                 </li>
                 <li>
 
-                    <Link to="haqqimizda" className="overlay-nav-link">Haqqımızda</Link> 
+                    <Link to="haqqimizda" className="overlay-nav-link" >Haqqımızda</Link> 
                 </li>
                 <li>
-                    <a href='#' className=" overlay-sehife overlay-nav-link  " onClick={dropSehifeAc} >Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
+                    <a href='#' className=" overlay-sehife overlay-nav-link "  onClick={dropSehifeAc}>Səhifələr <TfiArrowCircleDown  className='overlay-arrow-icon'/></a>
                     <ul className="overlay-sehife-drop overlay-dropdownMenu " ref={dropSehife}>
                         <Link className="overlay-dropdownItem" to="xidmetler">Xidmətlər</Link>
                         <Link className="overlay-dropdownItem" to="xidmet tefferuati">Xidmət Təfərrüatı</Link>
@@ -118,12 +125,13 @@ if(kliklediyimUnvan.classList.contains('overlay-bloq')){
 
                     <Link to="elaqe" className="overlay-nav-link">Əlaqə</Link>
                 </li>
+                <Searchbtn  placeholders="Axtar..." datalar={Data}/>
 
             </div>
             </div>
 
 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={NavBarUnvani}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/"></Link>
 
