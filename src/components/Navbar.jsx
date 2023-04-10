@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import Data from '../data.json'
 import './css/Navbar.css'
 import Searchbtn from './Searchbtn'
@@ -8,10 +8,11 @@ import { RxCross2 } from 'react-icons/rx'
 import { TfiArrowCircleDown } from 'react-icons/tfi'
 // import { IoMdArrowForward} from 'react-icons/io'
 import { IoIosArrowDown} from 'react-icons/io'
-//Button
-// import Button from './Button'
+// search icon
+import {BiSearchAlt} from 'react-icons/bi'
 //Link
 import { Link } from 'react-router-dom'
+import OverlayMenuSearchbtn from './OverlayMenuSearchbtn'
 //moadlform
 // import NavModulForm from './NavModulForm'
 // searcbtn
@@ -91,7 +92,8 @@ const listenScrollEvent = () => {
 
 
 
-
+//searchModal
+const [openModalSearch, setOpenModalSearch ] = useState(false)
 
 
     return (
@@ -128,8 +130,12 @@ const listenScrollEvent = () => {
 
                     <Link to="elaqe" className="overlay-nav-link">Əlaqə</Link>
                 </li>
-                <Searchbtn  placeholders="Axtar..." datalar={Data}/>
-
+                {/* <Searchbtn  placeholders="Axtar..." datalar={Data}/> */}
+               <li>
+               <BiSearchAlt className='navbar-overlay-search-icon' onClick={()=>{ setOpenModalSearch(true)}}/>
+               {openModalSearch && < OverlayMenuSearchbtn closeModalSearch={setOpenModalSearch}/>}
+                </li>
+             
             </div>
             </div>
 

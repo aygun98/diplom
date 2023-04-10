@@ -1,36 +1,44 @@
 [
     {
+        "key": 1,
         "to" :"/haqqimizda",
         "write": "Haqqımızda"
         
        },
        {
+        "key": 2,
          "to" :"/xidmetler",
         "write": "Xidmətlər"
         
        },
        {
+        "key": 3,
         "to" :"/xidmet tefferuati",
         "write": "Xidmət təffərüatı"
        
        },
        {
+        "key": 4,
         "to" :"/qiymet",
         "write": "Qiymətlər"
        },
        {
+        "key": 5,
         "to" :"/bloq",
         "write": "Bloq"
        },
        {
+        "key": 6,
         "to" :"/ferqlerimiz",
         "write": "Fərqlərımız"
        },
        {
+        "key": 7,
         "to" :"/elaqe",
         "write": "Əlaqə"
     },
        {
+        "key": 8,
         "to" :"/",
         "write": "Ana Səhifə"
     }

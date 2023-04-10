@@ -53,11 +53,11 @@ const Searchbtn = ({placeholders, datalar}) => {
             <div className="searchIcon">
                 {filteredData.length === 0? <BiSearchAlt onClick={inputActiv} className='search-icon'/> : <RxCross2  className='clearBtn' id='clearBtn' onClick={clearInput}/>}</div>
         </div>
-        {filteredData.length != 0 && 
+        {filteredData.length !== 0 && 
         <div className='dataResult' >
             {
                 filteredData.slice(0, 15).map((value, key) =>{
-                    return  <Link  to={value.to} className="dataItem" > 
+                    return  <Link key={value.key}  to={value.to} className="dataItem" > 
                    <p> {value.write}</p>
                     </Link>
                 })

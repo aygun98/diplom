@@ -5,12 +5,12 @@
     justify-content: space-between;
     border: 1px solid #2b1a66;
     border-radius: 50px;
-    width: 60px;
+    width: 40px;
     /* width: 0px; */
     border-right: none;
     padding-left: 0px;
     border: none;
-   
+   background-color:transparent;
     transition:  1s ease-in;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .search input {
-    background-color: #ffffff;
+    background-color: transparent;
     border: 1px solid #2b1a66;
     border: none;
     outline: none;

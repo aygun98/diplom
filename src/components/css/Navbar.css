@@ -259,7 +259,10 @@ border-right: none;
     color: #fff;
 }
 
-
+.navbar-overlay-search-icon{
+    font-size: 35px;
+    color: #2B1A66;
+}
 
 /* media */
 @media (max-width:1255px){
