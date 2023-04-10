@@ -7,7 +7,7 @@ const ContactForm = () => {
     return (
         <>
             <div className='contact-form-container'>
-                <div className="contact-form-left"></div>
+                <div className="contact-form-left"  data-aos="fade-right"></div>
                 <div className="contact-form-right">
                     <div className='contact-form-right-text'>
                         <h6>Bizimlə əlaqə saxlayın</h6>

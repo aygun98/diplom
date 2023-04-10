@@ -32,6 +32,9 @@
 
     /* text-align: center; */
 }
+.service-keyfiyyet-left:hover, .service-keyfiyyet-left-text-qutu:hover{
+    animation: sake 2s infinite;
+}
 .service-keyfiyyet-left-text-qutu h2{
     font-size: 25px;
     font-weight: 700;

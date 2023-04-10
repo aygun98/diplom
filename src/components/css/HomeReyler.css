@@ -120,6 +120,9 @@
     right: 100px;
 }
 
+.home-reyler-right-img:hover{
+   animation: sake 2s infinite;
+}
 @media (max-width:1135px) {
     .home-reyler-container {
         padding: 95px 20px;

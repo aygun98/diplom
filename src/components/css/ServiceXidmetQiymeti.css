@@ -24,6 +24,18 @@
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.185);
     align-items: center;
+    cursor: pointer;
+   
+}
+.service-xidmet-qiymeti-bottom-card:hover{
+    color: #fff;
+    background-color: #2b1a66;
+transition: background-color 500ms;
+   
+}
+.service-xidmet-qiymeti-bottom-card:hover p{
+    color: #fff;
+   
 }
 .service-xidmet-qiymeti-bottom-card-img{
     background-position: center;

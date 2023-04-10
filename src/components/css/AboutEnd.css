@@ -48,6 +48,9 @@
     top: -100px;
     
 }
+.about-end-bottom:hover{
+    animation: sake 2s infinite;
+}
 .about-end-bottom-icons{
     font-size: 40px;
     color: #fff;

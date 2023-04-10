@@ -21,7 +21,7 @@ const Canvas = ({faiz}) => {
     
   return (
    <>
-  <div className='canvas-conatainer' style={{textAlign:"center"}} >
+  <div className='canvas-conatainer' style={{textAlign:"center"}}  data-aos="fade-up">
       
       <div style={{ width: 200}}>
         <CircularProgressbar value={percentage} text={`${percentage}%`} />

@@ -44,6 +44,10 @@
     display: flex; 
     flex-direction: column;
     gap: 10px;
+    cursor: pointer;
+}
+.service-qiymet-plan-bottom-card:hover{
+    animation: sake 1s infinite;
 }
 .service-qiymet-plan-bottom-card>h2{
     font-size: 32px;

@@ -10,14 +10,14 @@ const ServiceDetailCanvas = () => {
     <>
     <div className="service-detail-canvas">
         <div className="service-detail-canvas-left">
-            <h6>Xidmətə Baxış</h6>
-            <h1>Gözlədiyiniz Keyfiyyət, Layiq Olduğunuz Xidmət!</h1>
-            <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. Torpağın yurdu kimi, mərsiyə də, torpağın onbaşı, aslanın yastığı.</p>
-       <Link to='/elaqe'><Button klass='service-detail-canvas-btn' daxiliYazi='Əlaqədə olmaq'/></Link>
+            <h6 data-aos="fade-right" data-aos-duration="500">Xidmətə Baxış</h6>
+            <h1 data-aos="fade-right" data-aos-duration="500">Gözlədiyiniz Keyfiyyət, Layiq Olduğunuz Xidmət!</h1>
+            <p data-aos="fade-right" data-aos-duration="500">Müştəri çox önəmlidir, müştərini müştəri izləyəcək. Torpağın yurdu kimi, mərsiyə də, torpağın onbaşı, aslanın yastığı.</p>
+       <Link to='/elaqe'  data-aos="fade-right" data-aos-duration="500"><Button klass='service-detail-canvas-btn' daxiliYazi='Əlaqədə olmaq'/></Link>
         </div>
         <div className="service-detail-canvas-right">
             <div className="service-detail-canvas-right-faiz">
-        <Canvas faiz='92'/>
+        <Canvas faiz='92' />
                 <h2>Layihə Tamamlandı</h2>
                 <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək.</p>
             </div>

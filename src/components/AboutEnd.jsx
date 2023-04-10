@@ -9,10 +9,10 @@ const AboutEnd = () => {
   const [openModalIframe, setOpenModalIframe ] = useState(false)
   return (
     <div className='about-end'>
-        <div className='about-end-top'><span className='about-end-top-icon-container'><BsPlayCircleFill className='about-end-top-icon openModalQutu' onClick={()=>{ setOpenModalIframe(true)}}/></span></div>
+        <div className='about-end-top'><span className='about-end-top-icon-container' data-aos="fade-up" data-aos-duration="500"><BsPlayCircleFill className='about-end-top-icon openModalQutu' onClick={()=>{ setOpenModalIframe(true)}}/></span></div>
         {openModalIframe && < PlayModalQutu closeModalIframe={setOpenModalIframe}/>}
         <div div className='about-end-bottom-container'>
-            <div className="about-end-bottom">
+            <div className="about-end-bottom" data-aos="fade-up" data-aos-duration="500">
             <div className='about-end-bottom-icons'>
             <RiNumber9 className='about-end-bottom-nomre-icon-margin '/>
              <RiNumber9 className='about-end-bottom-nomre-icon'/>

@@ -18,23 +18,23 @@ const AboutAcardion = () => {
         <>
         <div className='about-acardion-header-menu-container'>
         <div className='about-acardion-header-text' >
-           <h6>Üstünlüklərimiz</h6>
-           <h1>Gəlin Sizə Hər şeyi Düzəltməyə Kömək edək</h1>
-            <p>Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
+           <h6 data-aos="fade-right"  data-aos-duration="500">Üstünlüklərimiz</h6>
+           <h1 data-aos="fade-left"  data-aos-duration="500">Gəlin Sizə Hər şeyi Düzəltməyə Kömək edək</h1>
+            <p data-aos="fade-right"  data-aos-duration="500">Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
         </div>
 
         <div className='about-acardion-container'>
 
-            <div className='about-acardion-div'>
+            <div className='about-acardion-div' data-aos="zoom-in"  data-aos-duration="500">
                 <div className="about-accordion" onClick={() =>setElaqeActive1(!ElaqeActive1)  }  >
                     <VscTools className='about-acardion-icon' />
                     <h1>Unudulmaz Təcrübə</h1>
                     </div>
-                    {ElaqeActive1 && <div className="panel"> 
+                    {ElaqeActive1 && <div className="panel"  > 
                   <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi. </p>
                 </div>}
             </div>
-            <div className='about-acardion-div'>
+            <div className='about-acardion-div' data-aos="zoom-in"  data-aos-duration="500">
                 <div className="about-accordion"  onClick={() => setElaqeActive2(!ElaqeActive2)}>
                     <BsBricks className='about-acardion-icon'/>
                   <h1>Keyfiyyətə Nəzarət Sistemi</h1>
@@ -43,7 +43,7 @@ const AboutAcardion = () => {
                     <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.Müştəri çox önəmlidir, müştərini müştəri izləyəcək. İndi o, sonda idi.</p>
                 </div>}
             </div>
-            <div className='about-acardion-div'>
+            <div className='about-acardion-div' data-aos="zoom-in"  data-aos-duration="500">
                 <div className="about-accordion"  onClick={() => setElaqeActive3(!ElaqeActive3)} >
                     <IoIosPeople className='about-acardion-icon'/>
                     <h1>Peşəkar və İxtisaslı</h1>

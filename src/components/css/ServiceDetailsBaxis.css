@@ -31,6 +31,9 @@
     bottom: -50px;
 
 }
+.service-detail-left:hover, .service-detail-left-box:hover{
+    animation: sake 2s infinite;
+}
 .service-detail-left-icon{
     font-size: 64px;
 }

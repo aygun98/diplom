@@ -20,6 +20,9 @@
     top: 100px;
     right: -100px;
 }
+.about-ferqli-left-img:hover{
+    animation: sake 2s infinite;
+}
 .about-ferqli-right{
     padding: 100px;
     padding-left: 150px;

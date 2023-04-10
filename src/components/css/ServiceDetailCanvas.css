@@ -57,6 +57,18 @@
     color: #626262;
 }
 
+.service-detail-canvas-right-faiz:hover{
+    color: #fff;
+    background-color: #2b1a66;
+}
+.service-detail-canvas-right-faiz:hover p{
+    color: #fff;
+   
+}
+.service-detail-canvas-right-faiz:hover  .CircularProgressbar-text{
+   fill: #fff !important;
+   
+}
 /*  */
 @media (max-width:1255px) {
     .service-detail-canvas{

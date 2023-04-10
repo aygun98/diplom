@@ -11,12 +11,12 @@ const ServiceQiymetPlan = () => {
     <>
     <div className="service-qiymet-plan">
     <div className="service-qiymet-plan-top">
-        <h6>Qiymətlər və Planlar</h6>
-        <h1>Sizin üçün Xüsusi Təkliflər</h1>
-        <p>Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
+        <h6  data-aos="fade-right" data-aos-duration="500">Qiymətlər və Planlar</h6>
+        <h1  data-aos="fade-left" data-aos-duration="500">Sizin üçün Xüsusi Təkliflər</h1>
+        <p  data-aos="fade-right" data-aos-duration="500">Ağrıma heyfslənirəm, amma elitamı itirdiyimə görə çox üzülürəm.</p>
     </div>
     <div className="service-qiymet-plan-bottom">
-        <div className='service-qiymet-plan-bottom-card qiymet-card1'>
+        <div className='service-qiymet-plan-bottom-card qiymet-card1' data-aos="zoom-in">
          <RxHome className='service-qiymet-plan-bottom-home-icon'/>
           <h2>Şəxsi Plan</h2>  
           <h1> <span>$19</span>/Ay</h1> 
@@ -32,7 +32,7 @@ const ServiceQiymetPlan = () => {
           </div>
           <Button klass='service-qiymet-plan-bottom-btn' daxiliYazi='Başlamaq'/>
           </div>
-        <div className='service-qiymet-plan-bottom-card qiymet-card2'>
+        <div className='service-qiymet-plan-bottom-card qiymet-card2' data-aos="zoom-in">
          <MdOutlineApartment className='service-qiymet-plan-bottom-home-icon'/>
           <h2>Yaşayış Planı</h2>  
           <h1> <span>$49</span>/Ay</h1> 
@@ -48,7 +48,7 @@ const ServiceQiymetPlan = () => {
           </div>
           <Button  klass='service-qiymet-plan-bottom-btn' daxiliYazi='Başlamaq'/>
           </div>
-        <div className='service-qiymet-plan-bottom-card qiymet-card3'>
+        <div className='service-qiymet-plan-bottom-card qiymet-card3' data-aos="zoom-in">
          <MdOutlineHomeWork className='service-qiymet-plan-bottom-home-icon'/>
           <h2>Korporativ Plan</h2>  
           <h1> <span>$79</span>/Ay</h1> 

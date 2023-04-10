@@ -30,9 +30,12 @@
     padding: 15px;
     bottom: 0;
 }
+.single-post-top-img:hover, .single-post-top-img-box:hover{
+    animation: sake 2s infinite;
+}
 .single-post-top-img-box h1{
     font-size: 42px;
-    font-weight: 800;
+    font-weight: 900;
     color: #fff;
     
 }

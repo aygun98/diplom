@@ -22,7 +22,7 @@
 }
 .tecrube-img-top:hover,.tecrube-img-bottom-left:hover,.tecrube-img-bottom-right:hover{
 
-    animation: sake 2s;
+    animation: sake 2s infinite;
 }
 
 .tecrube-img-bottom{

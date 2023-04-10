@@ -46,6 +46,9 @@
     width: 350px;
 }
 
+.about-acardion-div:hover{
+    animation: sake 2s infinite;
+}
 .about-accordion {
     /* background-color: #eee; */
     /* color: #444; */

@@ -57,6 +57,9 @@
     background-color: #fff;
    
 }
+.sevrices-award:hover{
+    animation: sake 2s infinite;
+}
 @media (max-width:1300px) {
     .sevrices-deyerlerimiz{
         padding-left: 0;

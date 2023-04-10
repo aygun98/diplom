@@ -17,18 +17,18 @@ const HomeXeberler = () => {
         </div>
         <div className="home-xeberler-bottom">
             <div className="home-xeberler-bottom-left"  data-aos="fade-up" data-aos-delay="500"  data-aos-duration="500">
-            <Link to="">       <div className='home-xeberler-bottom-left-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
+            <Link to="bloq">       <div className='home-xeberler-bottom-left-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
                 <h1>Drenajın təmizlənməsinə ehtiyacınız olduğunu necə bilmək olar</h1>
                 <h6><BsCalendar className='home-calenar-icon'/> 8 dekabr 2022-ci il</h6>
                 <p>Ana səhifə <MdKeyboardArrowRight/>  Tək Yazı Drenaj Təmizlənməsinə Ehtiyac Olduğunuzu Necə Bilirsiniz</p>
-                <Link to="">Daha çox oxu <BsArrowRight/></Link>
+                <Link to="bloq">Daha çox oxu <BsArrowRight className='home-xeberler-arrow-icon'/></Link>
             </div>
             <div className="home-xeberler-bottom-center" data-aos="fade-up" data-aos-delay="570"  data-aos-duration="500">
-           <Link to="">  <div className='home-xeberler-bottom-center-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
+           <Link to="bloq">  <div className='home-xeberler-bottom-center-img'><p>Məsləhətlər və Hiylə</p></div></Link> 
                 <h1>Bir neçə dəqiqə ərzində edə biləcəyiniz 10 ev təmiri</h1>
                 <h6><BsCalendar className='home-calenar-icon'/> 8 dekabr 2022-ci il</h6>
                 <p>Ana səhifə <MdKeyboardArrowRight/>  Tək Yazı Drenaj Təmizlənməsinə Ehtiyac Olduğunuzu Necə Bilirsiniz</p>
-                <Link to="">Daha çox oxu <BsArrowRight/></Link>
+                <Link to="bloq">Daha çox oxu <BsArrowRight className='home-xeberler-arrow-icon'/></Link>
             </div>
             <div className="home-xeberler-bottom-right" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="500">
                 <h1>Son Post</h1>

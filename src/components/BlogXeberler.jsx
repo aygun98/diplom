@@ -36,7 +36,7 @@ const BlogXeberler = () => {
           </div>
 
         </div>
-        <div className="blog-xeberler-right">
+        <div className="blog-xeberler-right" data-aos="fade-up">
           <span className='blog-xeberler-right-span'><h1>Fixano haqqında</h1></span>
           <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. Torpağın yurdu kimi, mərsiyə də, torpağın onbaşı, aslanın yastığı.</p>
           <span className='blog-xeberler-right-span'><h1>Son Post</h1></span>
@@ -49,14 +49,14 @@ const BlogXeberler = () => {
               </div>
             </div>
            
-            <div className='blog-xeberler-right-card'>
+            <div className='blog-xeberler-right-card'  data-aos="fade-up">
             <Link to='/ferqlerimiz'>   <div className="blog-xeberler-right-card-img blog-xeberler-left-img2"></div></Link>
               <div className="blog-xeberler-right-card-text">
                 <h3>Drenajın təmizlənməsinə ehtiyacınız olduğunu necə bilmək olar</h3>
               <p><BsCalendar/> 8 dekabr 2022-ci il</p>
               </div>
             </div>
-            <div className='blog-xeberler-right-card'>
+            <div className='blog-xeberler-right-card'  data-aos="fade-up">
             <Link to='/ferqlerimiz'>  <div className="blog-xeberler-right-card-img blog-xeberler-left-img3"></div></Link>
               <div className="blog-xeberler-right-card-text">
                 <h3>Mərkəzi Kondisionerin quraşdırılması və təmiri</h3>
@@ -64,7 +64,7 @@ const BlogXeberler = () => {
               </div>
             </div>
           </div>
-          <div className='blog-xeberler-right-bottom'>
+          <div className='blog-xeberler-right-bottom'  data-aos="fade-up">
             <h6>Hər hansı bir kömək lazımdır?</h6>
             <h1>Hər Zaman Təcili Xidmətlər!</h1>
             <p>Müştəri çox önəmlidir, müştərini müştəri izləyəcək. Torpağın yurdu kimi, mərsiyə də, torpağın onbaşı, aslanın yastığı.</p>
