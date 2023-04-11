@@ -19,8 +19,9 @@
 
     .overlay-menu-search-cross-icon{
         font-size: 35px;
-        color: #fff;
+        color: #2b1a66;
         position: absolute;
         top: 30px;
         right: 30px;
+        cursor: pointer;
     }

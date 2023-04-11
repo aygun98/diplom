@@ -23,7 +23,7 @@ form input, .form-button-elaqe{
     border-radius: 2px;
 }
 .form-button-elaqe{
-    max-width: 100%;
+    max-width: 100% !important;
    
 }
 form div span{
@@ -42,10 +42,13 @@ textarea{
     padding: 15px 0;
     font-weight: 700;
     margin-top: 10px;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 input:focus, textarea:focus, .form-button-elaqe{
     box-shadow: 0 0 9px #2b98e659;
     border-color: #2b98e6;
+  
 }
 
 

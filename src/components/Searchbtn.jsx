@@ -35,15 +35,7 @@ const Searchbtn = ({placeholders, datalar}) => {
    inputsactiv.current.classList.toggle('search-input-aktiv')
     }
  }
-// databagla
-// const datamiz = useRef()
-// const datacross = useRef()
-// const dataBagla =() =>{
- 
-//   datamiz.current.classList.add('data-bagla')
-//   inputsactiv.current.value=''
 
-// }
 
 
  return (

@@ -262,6 +262,7 @@ border-right: none;
 .navbar-overlay-search-icon{
     font-size: 35px;
     color: #2B1A66;
+    cursor: pointer;
 }
 
 /* media */
