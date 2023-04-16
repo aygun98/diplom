@@ -58,23 +58,23 @@ const Footer = () => {
         <div className="footer-center-center">
           <ul>
             <h3>Bizi Kəşf Edin</h3>
-            <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Ana səhifə</Link>
-            <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Haqqımızda</Link>
-            <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Tək yazı</Link>
-            <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Bloq</Link>
+            <Link to="/"><IoIosArrowForward className='footer-center-center-icon'/>Ana səhifə</Link>
+            <Link to="haqqimizda"><IoIosArrowForward className='footer-center-center-icon'/>Haqqımızda</Link>
+            <Link to="ferqlerimiz"><IoIosArrowForward className='footer-center-center-icon'/>Fərqlərimiz</Link>
+            <Link to="bloq"><IoIosArrowForward className='footer-center-center-icon'/>Bloq</Link>
           </ul>
           <ul>
             <h3>Xidmətlər</h3>
-          <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Xidmətlər</Link>
-          <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Xidmət təfərrüatı</Link>
-          <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Qiymət planı</Link>
-          <Link to=""><IoIosArrowForward className='footer-center-center-icon'/>Əlaqə</Link>
+          <Link to="xidmetler"><IoIosArrowForward className='footer-center-center-icon'/>Xidmətlər</Link>
+          <Link to="xidmet tefferuati"><IoIosArrowForward className='footer-center-center-icon'/>Xidmət təfərrüatı</Link>
+          <Link to="qiymet"><IoIosArrowForward className='footer-center-center-icon'/>Qiymət planı</Link>
+          <Link to="elaqe"><IoIosArrowForward className='footer-center-center-icon'/>Əlaqə</Link>
           </ul>
         </div>
         <div className="footer-center-right">
           <h4>Xəbər bülleteni</h4>
           <p>E-poçt vasitəsilə ən son yeniləmələri əldə edin. Bunu qaçırmayın. İstənilən vaxt abunəlikdən çıxa bilərsiniz.</p>
-          <form action="" className='footer-center-right-form' ref={form} onSubmit={sendEmail}>
+          <form  className='footer-center-right-form' ref={form} onSubmit={sendEmail}>
             <input type="mail" name="email"  placeholder='E-poçtunuz...' />
             <button className='footer-bottom-form-btn'><span>İndi Abunə Olun </span></button>
           </form>

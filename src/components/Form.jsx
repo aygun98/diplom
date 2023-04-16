@@ -51,7 +51,7 @@ const Form = () => {
                 <textarea name="message" />
 
 
-                <button class='form-button-elaqe' type="submit" onClick={()=>{setOpenModalForm(true)}} > <span>Mesajı Göndər</span></button>
+                <button className='form-button-elaqe' type="submit" onClick={()=>{setOpenModalForm(true)}} > <span>Mesajı Göndər</span></button>
             </form>
             {/* <FormModalQutu/> */}
             {openModalForm && < FormModalQutu closeModalForm={setOpenModalForm}/>}

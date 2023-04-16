@@ -16,6 +16,9 @@ import SinglePost from './components/SinglePost'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import NotPageFound from "./components/NotPageFound";
+//scrollTop
+
+import ScrollToTop from "./components/ScrollToTop";
 
 //
 import AOS from 'aos';
@@ -45,6 +48,7 @@ function App() {
       {
         loading ? (<Loading />) : (
           <BrowserRouter>
+          <ScrollToTop/>
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
